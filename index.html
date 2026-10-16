@@ -67,6 +67,10 @@
   .store span { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
   .store small { font-size: 11px; font-weight: 500; letter-spacing: .02em; }
   .store b { font-size: 21px; font-weight: 600; letter-spacing: -0.01em; }
+  .store svg.gp { width: 24px; height: 26px; }
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; justify-content: inherit; }
+  .final .stores { justify-content: center; margin-top: 34px; }
+  .final .stores .store { margin-top: 0; }
 
   /* ---------- Nav ---------- */
   nav { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .25s ease, box-shadow .25s ease; }
@@ -322,7 +326,7 @@
       <a href="#atlas">Atlas</a>
       <a href="#pricing">Pricing</a>
       <a href="#support">Support</a>
-      <a class="pill" href="https://apps.apple.com/app/id6761543231">Get the app</a>
+      <a class="pill" href="#get">Get the app</a>
     </div>
   </div>
 </nav>
@@ -334,10 +338,16 @@
       <h1>Medical terminology, <em>made visual.</em></h1>
       <p class="lead">Break any term into its prefix, root and suffix. See it on a labelled anatomy drawing. Watch it on a live ECG strip. Then lock it in with spaced repetition that schedules every card for you.</p>
       <div class="hero-cta">
+        <div class="stores">
         <a class="store" href="https://apps.apple.com/app/id6761543231" aria-label="Download on the App Store">
           <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
           <span><small>Download on the</small><b>App Store</b></span>
         </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.edictdigital.auramedical" aria-label="Get it on Google Play">
+            <svg class="gp" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>
+            <span><small>GET IT ON</small><b>Google Play</b></span>
+          </a>
+        </div>
         <div class="hero-note"><b>Free to start.</b> No account, no ads.<br>Works fully offline.</div>
       </div>
       <div class="chips">
@@ -435,7 +445,7 @@
         <ul>
           <li><span><b>Daily goal</b> and streak tracking</span></li>
           <li><span><b>Progress by specialty</b> so you see weak spots</span></li>
-          <li><span><b>Private by design</b>: everything stays on your iPhone</span></li>
+          <li><span><b>Private by design</b>: everything stays on your phone</span></li>
         </ul>
       </div>
     </div>
@@ -535,7 +545,7 @@
           <div class="tier best"><span class="badge">Best value</span><div class="t-name">Yearly</div><div class="t-price">$39.99</div><div class="t-per">per year · about $0.77 a week</div></div>
           <div class="tier"><div class="t-name">Lifetime</div><div class="t-price">$79.99</div><div class="t-per">pay once</div></div>
         </div>
-        <p class="fine">US prices shown; your local price appears in the App Store. Subscriptions renew automatically until cancelled in your Apple Account settings.</p>
+        <p class="fine">US prices shown; your local price appears in the App Store or Google Play. Subscriptions renew automatically until cancelled in your Apple Account or Google Play settings.</p>
       </div>
     </div>
   </div>
@@ -560,23 +570,29 @@
       <details><summary>How does spaced repetition work?</summary><p>After studying a card, rate how well you remembered it (Again, Hard, Good, Easy). Cards you miss come back in the same session; the rest are scheduled for the moment you're about to forget them, so daily reviews stay short.</p></details>
       <details><summary>Will my progress sync across devices?</summary><p>Not currently. All progress is stored locally on each device. Cloud sync may be added in a future update.</p></details>
       <details><summary>Is the app free?</summary><p>Aura Medical is free to download with a permanent free tier: the first units of the terminology course, the first cards of every specialty, a selection of illustrations and ECG rhythms, and a daily quiz. <strong>Aura Pro</strong> unlocks everything and is available as a weekly, monthly or yearly auto-renewing subscription, or as a one-time lifetime purchase. There are no ads.</p></details>
-      <details><summary>How do I cancel or manage my subscription?</summary><p>Subscriptions are billed by Apple to your Apple Account and renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel anytime in <em>Settings → [your name] → Subscriptions</em> on your iPhone, or at <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
-      <details><summary>I bought Pro but it's not active, or I got a new phone.</summary><p>Open the app, go to <em>Settings → Restore purchases</em> while signed in with the same Apple Account you used to buy.</p></details>
+      <details><summary>How do I cancel or manage my subscription?</summary><p>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. <strong>iPhone:</strong> billed by Apple; manage or cancel in <em>Settings → [your name] → Subscriptions</em> or at <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. <strong>Android:</strong> billed by Google Play; manage or cancel in the Play Store app under <em>Profile → Payments &amp; subscriptions → Subscriptions</em> or at <a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>.</p></details>
+      <details><summary>I bought Pro but it's not active, or I got a new phone.</summary><p>Open the app and go to <em>Settings → Restore purchases</em>. Make sure you are signed in with the same Apple Account (iPhone) or Google account (Android) you used to buy. Purchases don't carry over between iPhone and Android.</p></details>
       <details><summary>Is this medical advice?</summary><p>No. Aura Medical is an educational tool. It does not provide medical advice, diagnosis or treatment. ECG strips are simulated and illustrations are schematic.</p></details>
       <details><summary>I found an error in a flashcard. How do I report it?</summary><p>Please email <a href="mailto:support@edict.com.tr">support@edict.com.tr</a> with the specialty, card term, and the issue. We review every report and update content regularly.</p></details>
     </div>
   </div>
 </section>
 
-<section class="final">
+<section class="final" id="get">
   <div class="wrap">
     <img class="icon" src="assets/icon.png" alt="Aura Medical app icon">
     <h2>Your next exam has a lot of long words in it.</h2>
     <p class="lead">Start decoding them tonight. Free to download, no account needed.</p>
+    <div class="stores">
     <a class="store" href="https://apps.apple.com/app/id6761543231" aria-label="Download on the App Store">
       <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
       <span><small>Download on the</small><b>App Store</b></span>
     </a>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.edictdigital.auramedical" aria-label="Get it on Google Play">
+        <svg class="gp" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>
+        <span><small>GET IT ON</small><b>Google Play</b></span>
+      </a>
+    </div>
   </div>
 </section>
 
