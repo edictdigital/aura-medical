@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Neuron" data-specialty="neurology" data-caption="Myelinated motor neuron: impulse travels from dendrites to axon terminals"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <!-- dendrites: ink casing first, core after the soma so the junctions merge -->
+  <g id="r-dendrites" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 130 C72 114 62 102 48 92 M62 104 C58 94 60 84 64 74 M54 97 C46 96 40 98 34 102 M68 150 C54 148 42 142 30 134 M46 144 C40 152 34 158 26 162 M80 170 C72 186 62 198 48 206 M62 196 C64 206 62 216 58 226 M104 128 C110 112 108 98 116 84 M110 104 C114 100 120 97 126 96 M102 174 C106 190 102 204 110 218" stroke="#2F3A40" stroke-width="6.5"/>
+    <path d="M82 130 C72 114 62 102 48 92 M62 104 C58 94 60 84 64 74 M54 97 C46 96 40 98 34 102 M68 150 C54 148 42 142 30 134 M46 144 C40 152 34 158 26 162 M80 170 C72 186 62 198 48 206 M62 196 C64 206 62 216 58 226 M104 128 C110 112 108 98 116 84 M110 104 C114 100 120 97 126 96 M102 174 C106 190 102 204 110 218" stroke="#F6D7E3" stroke-width="3.6"/>
+  </g>
+
+  <!-- axon core runs the full length under the myelin -->
+  <g id="r-axon">
+    <path d="M138 147.5 L330 147.5 L330 152.5 L138 152.5 Z" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+
+  <g id="r-cell-body">
+    <path d="M70 140 C72 124 90 118 104 124 C116 130 122 140 118 150 C122 162 112 174 98 176 C84 178 70 170 68 158 C66 152 68 146 70 140 Z" fill="#F6D7E3" stroke="#2F3A40" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+  <!-- dendrite cores re-drawn over the soma outline (context) -->
+  <path d="M82 130 C80 127 79 126 78 124 M68 150 C70 150 72 150 74 150 M80 170 C80 168 81 167 82 166 M104 128 C104.5 126 105 125 105.5 123 M102 174 C102 172 102 171 101 169" fill="none" stroke="#F6D7E3" stroke-width="4" stroke-linecap="round"/>
+
+  <g id="r-nucleus">
+    <circle cx="90" cy="149" r="11" fill="#7B5EA7" stroke="#2F3A40" stroke-width="1.3"/>
+    <circle cx="93" cy="146" r="3" fill="#4E3A73"/>
+  </g>
+
+  <g id="r-axon-hillock">
+    <path d="M114 137 C124 143 131 146.5 140 147.5 L140 152.5 C131 153.5 124 157 114 163 C119 155 119 145 114 137 Z" fill="#E6AFC6" stroke="#2F3A40" stroke-width="1.3" stroke-linejoin="round"/>
+  </g>
+
+  <g id="r-myelin-sheath" stroke="#2F3A40" stroke-width="1.5">
+    <rect x="152" y="140" width="44" height="20" rx="9" fill="#F7E3A4"/>
+    <rect x="202" y="140" width="44" height="20" rx="9" fill="#F7E3A4"/>
+    <rect x="252" y="140" width="44" height="20" rx="9" fill="#F7E3A4"/>
+    <path d="M160 143 C163 150 163 150 160 157 M188 143 C185 150 185 150 188 157 M210 143 C213 150 213 150 210 157 M238 143 C235 150 235 150 238 157 M260 143 C263 150 263 150 260 157 M288 143 C285 150 285 150 288 157" fill="none" stroke="#C9A94A" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <g id="r-schwann-cell">
+    <ellipse cx="224" cy="161" rx="12" ry="5.5" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.2"/>
+    <ellipse cx="224" cy="161" rx="6" ry="3" fill="#7B5EA7"/>
+  </g>
+
+  <g id="r-node-of-ranvier" fill="#D96C5F" stroke="#2F3A40" stroke-width="0.8">
+    <rect x="197" y="146" width="4" height="8" rx="1"/>
+    <rect x="247" y="146" width="4" height="8" rx="1"/>
+  </g>
+
+  <!-- axon terminals -->
+  <g id="r-axon-terminals">
+    <path d="M326 150 C336 146 342 134 350 124 M326 150 C338 150 346 148 358 146 M334 148 C342 152 346 160 348 168" fill="none" stroke="#2F3A40" stroke-width="5" stroke-linecap="round"/>
+    <path d="M326 150 C336 146 342 134 350 124 M326 150 C338 150 346 148 358 146 M334 148 C342 152 346 160 348 168" fill="none" stroke="#F6D7E3" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="352" cy="121" r="5.5" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.4"/>
+    <circle cx="361" cy="146" r="5.5" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.4"/>
+  </g>
+
+  <g id="r-synapse">
+    <path d="M326 186 C340 180 360 180 378 184 L378 196 C360 192 340 192 326 198 Z" fill="#EDE6E9" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round"/>
+    <circle cx="349" cy="172" r="6.5" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.4"/>
+    <circle cx="347" cy="171" r="1.4" fill="#7B5EA7"/>
+    <circle cx="351" cy="173" r="1.4" fill="#7B5EA7"/>
+    <circle cx="348" cy="175" r="1.4" fill="#7B5EA7"/>
+  </g>
+
+  <!-- direction of impulse -->
+  <path d="M168 120 L232 120 M226 115 L233 120 L226 125" fill="none" stroke="#6B7A82" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g id="labels">
+    <g><path class="ld" d="M66.0 30.8 L64.0 78.0"/><circle class="ad" cx="64.0" cy="78.0" r="1.6"/><path class="ld" d="M130.0 30.8 L127.0 150.0"/><circle class="ad" cx="127.0" cy="150.0" r="1.6"/><path class="ld" d="M350.0 30.8 L352.0 121.0"/><circle class="ad" cx="352.0" cy="121.0" r="1.6"/><path class="ld" d="M202.0 52.8 L199.0 148.0"/><circle class="ad" cx="199.0" cy="148.0" r="1.6"/><path class="ld" d="M228.0 242.8 L224.0 163.0"/><circle class="ad" cx="224.0" cy="163.0" r="1.6"/><path class="ld" d="M402.0 242.8 L349.0 176.0"/><circle class="ad" cx="349.0" cy="176.0" r="1.6"/><path class="ld" d="M86.0 264.8 L88.0 152.0"/><circle class="ad" cx="88.0" cy="152.0" r="1.6"/><path class="ld" d="M106.0 264.8 L104.0 170.0"/><circle class="ad" cx="104.0" cy="170.0" r="1.6"/><path class="ld" d="M178.0 264.8 L176.0 157.0"/><circle class="ad" cx="176.0" cy="157.0" r="1.6"/><path class="ld" d="M314.0 264.8 L312.0 150.0"/><circle class="ad" cx="312.0" cy="150.0" r="1.6"/></g><text x="70" y="34" data-for="dendrites" data-ax="64" data-ay="78">Dendrites</text>
+    <text x="134" y="34" data-for="axon-hillock" data-ax="127" data-ay="150">Axon hillock</text>
+    <text x="346" y="34" text-anchor="end" data-for="axon-terminals" data-ax="352" data-ay="121">Axon terminals</text>
+    <text x="206" y="56" data-for="node-of-ranvier" data-ax="199" data-ay="148">Node of Ranvier</text>
+    <text x="232" y="246" data-for="schwann-cell" data-ax="224" data-ay="163">Schwann cell</text>
+    <text x="398" y="246" text-anchor="end" data-for="synapse" data-ax="349" data-ay="176">Synapse</text>
+    <text x="82" y="268" text-anchor="end" data-for="nucleus" data-ax="88" data-ay="152">Nucleus</text>
+    <text x="110" y="268" data-for="cell-body" data-ax="104" data-ay="170">Cell body</text>
+    <text x="182" y="268" data-for="myelin-sheath" data-ax="176" data-ay="157">Myelin sheath</text>
+    <text x="318" y="268" data-for="axon" data-ax="312" data-ay="150">Axon</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Cardiac conduction system" data-specialty="cardiology" data-caption="The impulse spreads from the SA node through the atria to the AV node, His bundle, bundle branches and Purkinje fibres"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <!-- great vessels (context) -->
+  <rect x="150" y="34" width="22" height="80" rx="7" fill="#4A6FB5" stroke="#2F3A40" stroke-width="1.8"/>
+  <rect x="160" y="200" width="20" height="78" rx="7" fill="#4A6FB5" stroke="#2F3A40" stroke-width="1.8"/>
+  <g stroke-linecap="round" fill="none">
+    <path d="M204 104 C200 50 252 30 268 62 L272 112" stroke="#2F3A40" stroke-width="22"/>
+    <path d="M204 104 C200 50 252 30 268 62 L272 112" stroke="#D64541" stroke-width="17.5"/>
+    <path d="M222 46 L218 30 M240 40 L240 23 M256 44 L263 29" stroke="#2F3A40" stroke-width="8"/>
+    <path d="M222 46 L218 30 M240 40 L240 23 M256 44 L263 29" stroke="#D64541" stroke-width="4.8"/>
+  </g>
+
+  <!-- myocardium -->
+  <path d="M142 118 C136 88 176 80 202 98 C230 82 278 90 280 126 C284 168 268 212 244 254 C239 263 230 264 224 257 C188 226 146 176 142 118 Z"
+        fill="#D96C5F" stroke="#2F3A40" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- chambers -->
+  <g id="r-right-atrium">
+    <path d="M150 116 C150 100 170 96 186 100 C196 104 200 116 198 130 C196 144 186 152 172 152 C158 152 150 142 150 130 Z" fill="#F0A99F" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+  <g id="r-left-atrium">
+    <path d="M218 112 C222 100 240 98 256 102 C268 106 272 118 270 130 C268 142 256 148 240 148 C226 148 218 140 216 128 Z" fill="#F0A99F" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+  <g id="r-right-ventricle">
+    <path d="M160 172 C172 166 198 166 208 170 C209 196 211 216 214 232 C196 224 172 202 160 172 Z" fill="#F0A99F" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+  <g id="r-left-ventricle">
+    <path d="M232 170 C242 164 258 164 262 172 C264 200 254 226 242 238 C236 228 233 204 232 170 Z" fill="#F0A99F" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- conduction system -->
+  <g id="r-internodal-pathways" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M174 104 C192 98 216 100 234 110 M173 108 C190 114 200 132 205 152 M168 111 C174 128 188 142 202 154 M161 110 C156 132 172 150 200 158" stroke="#2F3A40" stroke-width="3.6"/>
+    <path d="M174 104 C192 98 216 100 234 110 M173 108 C190 114 200 132 205 152 M168 111 C174 128 188 142 202 154 M161 110 C156 132 172 150 200 158" stroke="#F4D35E" stroke-width="2"/>
+  </g>
+  <g id="r-sa-node">
+    <ellipse cx="166" cy="106" rx="10" ry="6" fill="#F4D35E" stroke="#2F3A40" stroke-width="1.4"/>
+  </g>
+  <g id="r-av-node">
+    <ellipse cx="207" cy="158" rx="8" ry="5.5" fill="#F4D35E" stroke="#2F3A40" stroke-width="1.4"/>
+  </g>
+  <g id="r-purkinje-fibers" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M222 244 C198 232 172 208 160 182 M204 233 L208 227 M186 218 L190 212 M171 201 L176 196 M234 250 C250 238 264 214 268 180 M245 239 L241 233 M255 223 L250 219 M263 204 L257 201 M222 244 C225 253 231 255 234 250" stroke="#2F3A40" stroke-width="3"/>
+    <path d="M222 244 C198 232 172 208 160 182 M204 233 L208 227 M186 218 L190 212 M171 201 L176 196 M234 250 C250 238 264 214 268 180 M245 239 L241 233 M255 223 L250 219 M263 204 L257 201 M222 244 C225 253 231 255 234 250" stroke="#F4D35E" stroke-width="1.5"/>
+  </g>
+  <g id="r-right-bundle-branch" stroke-linecap="round" fill="none">
+    <path d="M219 178 C216 198 216 220 222 242" stroke="#2F3A40" stroke-width="4.2"/>
+    <path d="M219 178 C216 198 216 220 222 242" stroke="#F4D35E" stroke-width="2.4"/>
+  </g>
+  <g id="r-left-bundle-branch" stroke-linecap="round" fill="none">
+    <path d="M222 178 C227 196 228 218 231 242 M225 189 C234 192 242 198 248 206" stroke="#2F3A40" stroke-width="4.2"/>
+    <path d="M222 178 C227 196 228 218 231 242 M225 189 C234 192 242 198 248 206" stroke="#F4D35E" stroke-width="2.4"/>
+  </g>
+  <g id="r-bundle-of-his" stroke-linecap="round" fill="none">
+    <path d="M211 161 L220 178" stroke="#2F3A40" stroke-width="5.6"/>
+    <path d="M211 161 L220 178" stroke="#F4D35E" stroke-width="3.6"/>
+  </g>
+
+  <g id="labels">
+    <g><path class="ld" d="M132.0 58.8 L164.0 106.0"/><circle class="ad" cx="164.0" cy="106.0" r="1.6"/><path class="ld" d="M132.0 94.8 L160.0 126.0"/><circle class="ad" cx="160.0" cy="126.0" r="1.6"/><path class="ld" d="M132.0 130.8 L176.0 140.0"/><circle class="ad" cx="176.0" cy="140.0" r="1.6"/><path class="ld" d="M132.0 166.8 L206.0 158.0"/><circle class="ad" cx="206.0" cy="158.0" r="1.6"/><path class="ld" d="M132.0 202.8 L188.0 196.0"/><circle class="ad" cx="188.0" cy="196.0" r="1.6"/><path class="ld" d="M132.0 238.8 L216.0 218.0"/><circle class="ad" cx="216.0" cy="218.0" r="1.6"/><path class="ld" d="M132.0 274.8 L186.0 218.0"/><circle class="ad" cx="186.0" cy="218.0" r="1.6"/><path class="ld" d="M286.0 92.8 L252.0 126.0"/><circle class="ad" cx="252.0" cy="126.0" r="1.6"/><path class="ld" d="M286.0 146.8 L215.0 169.0"/><circle class="ad" cx="215.0" cy="169.0" r="1.6"/><path class="ld" d="M286.0 182.8 L241.0 197.0"/><circle class="ad" cx="241.0" cy="197.0" r="1.6"/><path class="ld" d="M286.0 218.8 L248.0 186.0"/><circle class="ad" cx="248.0" cy="186.0" r="1.6"/></g><text x="128" y="62" text-anchor="end" data-for="sa-node" data-ax="164" data-ay="106">SA node</text>
+    <text x="128" y="98" text-anchor="end" data-for="internodal-pathways" data-ax="160" data-ay="126">Internodal pathways</text>
+    <text x="128" y="134" text-anchor="end" data-for="right-atrium" data-ax="176" data-ay="140">Right atrium</text>
+    <text x="128" y="170" text-anchor="end" data-for="av-node" data-ax="206" data-ay="158">AV node</text>
+    <text x="128" y="206" text-anchor="end" data-for="right-ventricle" data-ax="188" data-ay="196">Right ventricle</text>
+    <text x="128" y="242" text-anchor="end" data-for="right-bundle-branch" data-ax="216" data-ay="218">Right bundle branch</text>
+    <text x="128" y="278" text-anchor="end" data-for="purkinje-fibers" data-ax="186" data-ay="218">Purkinje fibers</text>
+    <text x="290" y="96" data-for="left-atrium" data-ax="252" data-ay="126">Left atrium</text>
+    <text x="290" y="150" data-for="bundle-of-his" data-ax="215" data-ay="169">Bundle of His</text>
+    <text x="290" y="186" data-for="left-bundle-branch" data-ax="241" data-ay="197">Left bundle branch</text>
+    <text x="290" y="222" data-for="left-ventricle" data-ax="248" data-ay="186">Left ventricle</text>
+  </g>
+</svg>

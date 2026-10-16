@@ -1,147 +1,747 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aura Medical — Support</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura Medical: Visual Medical Terminology for Nursing &amp; Health Students</title>
+<meta name="description" content="Learn medical terminology the visual way. Word-part course, 2,400 flashcards, 80 labelled anatomy illustrations and 24 live ECG rhythms, with spaced repetition. For nursing, medical assistant, allied-health and pre-med students.">
+<meta name="apple-itunes-app" content="app-id=6761543231">
+<meta name="theme-color" content="#0B4F46">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aura Medical: medical terminology, made visual">
+<meta property="og:description" content="Prefixes, roots and suffixes, 2,400 flashcards, 80 anatomy illustrations and 24 live ECG rhythms. Built for nursing and health students.">
+<meta property="og:image" content="https://edictdigital.github.io/aura-medical/assets/og.jpg">
+<meta property="og:url" content="https://edictdigital.github.io/aura-medical/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --primary: #0F7B6C;
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --card: #f9fafb;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1115;
-      --text: #f3f4f6;
-      --muted: #9ca3af;
-      --border: #2a2f3a;
-      --card: #161a22;
-    }
+    --teal-950: #04211D;
+    --teal-900: #062F2A;
+    --teal-800: #0B4F46;
+    --teal-700: #0F7B6C;
+    --teal-500: #16A08D;
+    --teal-300: #7FF3DD;
+    --teal-50:  #E8F6F3;
+    --orange:   #D9822B;
+    --orange-50:#FBF0E4;
+    --violet:   #6D5BD0;
+    --violet-50:#EFEBFB;
+    --red:      #D64541;
+    --ink:      #0E1A19;
+    --ink-2:    #3D4B49;
+    --muted:    #6A7876;
+    --line:     #E3EAE8;
+    --paper:    #FFFFFF;
+    --mist:     #F4F8F7;
+    --radius:   22px;
+    --shadow:   0 1px 2px rgba(4,33,29,.06), 0 12px 32px -12px rgba(4,33,29,.18);
+    --font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
-  header { text-align: center; margin-bottom: 48px; }
-  .logo {
-    width: 72px; height: 72px; border-radius: 18px;
-    background: var(--primary);
-    display: inline-flex; align-items: center; justify-content: center;
-    color: white; font-size: 36px; margin-bottom: 16px;
-  }
-  h1 { font-size: 32px; margin: 0 0 8px; }
-  .tagline { color: var(--muted); margin: 0; }
-  h2 { font-size: 20px; margin: 40px 0 12px; }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 16px;
-  }
-  .card h3 { margin: 0 0 8px; font-size: 16px; }
-  .card p { margin: 0; color: var(--muted); font-size: 15px; }
-  a { color: var(--primary); text-decoration: none; font-weight: 500; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font-family: var(--font); color: var(--ink); background: var(--paper); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img, svg { display: block; max-width: 100%; }
+  a { color: var(--teal-700); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .contact {
-    text-align: center;
-    padding: 32px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    margin-top: 24px;
+  .wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  @media (max-width: 600px) { .wrap { padding: 0 16px; } }
+
+  .eyebrow { font-family: var(--mono); font-size: 12.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--teal-700); margin: 0 0 14px; }
+  h1, h2, h3 { line-height: 1.12; letter-spacing: -0.025em; margin: 0; }
+  h2 { font-size: clamp(30px, 4.2vw, 46px); font-weight: 800; }
+  h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+  .lead { font-size: clamp(17px, 1.6vw, 19px); color: var(--ink-2); max-width: 620px; margin: 18px 0 0; }
+  section { padding: 112px 0; }
+  @media (max-width: 760px) { section { padding: 76px 0; } }
+
+  /* ---------- App Store button ---------- */
+  .store { display: inline-flex; align-items: center; gap: 11px; background: #000; color: #fff; border-radius: 13px; padding: 10px 20px 10px 16px; border: 1px solid rgba(255,255,255,.22); transition: transform .15s ease, box-shadow .15s ease; }
+  .store:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 10px 24px -8px rgba(0,0,0,.45); }
+  .store svg { width: 26px; height: 30px; fill: #fff; }
+  .store span { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
+  .store small { font-size: 11px; font-weight: 500; letter-spacing: .02em; }
+  .store b { font-size: 21px; font-weight: 600; letter-spacing: -0.01em; }
+
+  /* ---------- Nav ---------- */
+  nav { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .25s ease, box-shadow .25s ease; }
+  nav.solid { background: rgba(6,47,42,.86); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); box-shadow: 0 1px 0 rgba(255,255,255,.06); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 18px; letter-spacing: -0.01em; }
+  .brand:hover { text-decoration: none; }
+  .brand img { width: 34px; height: 34px; border-radius: 9px; box-shadow: 0 0 0 1px rgba(255,255,255,.15); }
+  .navlinks { display: flex; align-items: center; gap: 28px; }
+  .navlinks a { color: rgba(255,255,255,.82); font-size: 15px; font-weight: 600; }
+  .navlinks a:hover { color: #fff; text-decoration: none; }
+  .navlinks .pill { background: #fff; color: var(--teal-800); padding: 8px 16px; border-radius: 999px; }
+  .navlinks .pill:hover { color: var(--teal-900); }
+  @media (max-width: 820px) { .navlinks a:not(.pill) { display: none; } }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; overflow: hidden; color: #fff; padding: 150px 0 0; background:
+      radial-gradient(1200px 700px at 72% 38%, #16A08D 0%, #0D6E61 38%, #05332D 100%); }
+  .hero::before { content: ""; position: absolute; inset: 0; background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px; mask-image: linear-gradient(to bottom, #000 60%, transparent); -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent); }
+  .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; }
+  .hero h1 { font-size: clamp(42px, 6.2vw, 76px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.02; }
+  .hero h1 em { font-style: normal; background: linear-gradient(100deg, #7FF3DD, #C8FFF3 60%, #FFD9A8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .lead { color: rgba(255,255,255,.82); }
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 34px; }
+  .hero-note { font-size: 14px; color: rgba(255,255,255,.7); }
+  .hero-note b { color: #fff; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
+  .chip { font-family: var(--mono); font-weight: 700; font-size: 13.5px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.1); color: #E9FFF9; border: 1px solid rgba(255,255,255,.16); }
+
+  .phones { position: relative; height: 640px; }
+  .phone { position: absolute; width: 290px; border-radius: 48px; padding: 10px; background: #0A0F0E; box-shadow: 0 0 0 2px #2A3533 inset, 0 50px 80px -30px rgba(0,10,8,.7), 0 20px 40px -20px rgba(0,0,0,.5); }
+  .phone img { border-radius: 38px; width: 100%; aspect-ratio: 1179 / 2556; object-fit: cover; background: #f3f3f3; }
+  .phone.p1 { left: 50%; top: 10px; transform: translateX(-50%); z-index: 3; }
+  .phone.p2 { left: 0; top: 90px; transform: rotate(-7deg) scale(.86); z-index: 2; opacity: .96; }
+  .phone.p3 { right: 0; top: 90px; transform: rotate(7deg) scale(.86); z-index: 2; opacity: .96; }
+  .float-tag { position: absolute; z-index: 4; background: #fff; color: var(--ink); border-radius: 16px; padding: 10px 14px; box-shadow: 0 18px 40px -16px rgba(0,0,0,.45); font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 10px; animation: bob 6s ease-in-out infinite; }
+  .float-tag .wp { font-family: var(--mono); font-weight: 700; font-size: 15px; }
+  .float-tag.t1 { left: -8px; top: 300px; }
+  .float-tag.t2 { right: -6px; top: 180px; animation-delay: -3s; }
+  @keyframes bob { 50% { transform: translateY(-10px); } }
+  .hero-ecg { position: relative; margin-top: -60px; height: 150px; z-index: 1; pointer-events: none; }
+  .hero-ecg svg { width: 100%; height: 100%; }
+  .hero-ecg path { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+  .hero-ecg .glow { stroke: #7FF3DD; stroke-width: 7; opacity: .35; filter: blur(5px); }
+  .hero-ecg .line { stroke: #E9FFF9; stroke-width: 2.4; stroke-dasharray: 3400; stroke-dashoffset: 3400; animation: draw 5s linear infinite; }
+  .hero-ecg .glow { stroke-dasharray: 3400; stroke-dashoffset: 3400; animation: draw 5s linear infinite; }
+  @keyframes draw { 0% { stroke-dashoffset: 3400; } 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+  @media (max-width: 960px) {
+    .hero { padding-top: 120px; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .phones { height: 560px; max-width: 520px; width: 100%; margin: 10px auto 0; }
+    .phone { width: 250px; }
   }
-  .contact a { font-size: 18px; }
-  footer {
-    text-align: center;
-    margin-top: 64px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 13px;
+  @media (max-width: 520px) {
+    .phones { height: 470px; }
+    .phone { width: 210px; border-radius: 38px; padding: 8px; }
+    .phone img { border-radius: 30px; }
+    .phone.p2 { left: -30px; } .phone.p3 { right: -30px; }
+    .float-tag.t1 { left: 0; top: 260px; } .float-tag.t2 { right: 0; top: 120px; }
+  }
+
+  /* ---------- Stats ---------- */
+  .stats { background: var(--teal-950); color: #fff; padding: 0; }
+  .stats .wrap { display: grid; grid-template-columns: repeat(5, 1fr); }
+  .stat { padding: 34px 12px; text-align: center; border-left: 1px solid rgba(255,255,255,.08); }
+  .stat:first-child { border-left: 0; }
+  .stat b { display: block; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; letter-spacing: -0.03em; color: var(--teal-300); }
+  .stat span { font-size: 14px; color: rgba(255,255,255,.72); }
+  @media (max-width: 760px) {
+    .stats .wrap { grid-template-columns: repeat(2, 1fr); }
+    .stat { border-left: 0; border-top: 1px solid rgba(255,255,255,.08); padding: 24px 8px; }
+    .stat:last-child { grid-column: span 2; }
+  }
+
+  /* ---------- Decoder ---------- */
+  .decoder { background: var(--mist); }
+  .dec-card { margin-top: 48px; background: #fff; border-radius: 28px; box-shadow: var(--shadow); padding: 44px clamp(20px, 4vw, 56px); text-align: center; }
+  .dec-term { font-size: clamp(30px, 6vw, 64px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.1; word-break: break-word; min-height: 1.15em; }
+  .dec-term span { transition: color .4s ease; }
+  .dec-parts { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 12px; margin-top: 30px; }
+  .part { min-width: 150px; border-radius: 18px; padding: 14px 18px; text-align: center; opacity: 0; transform: translateY(10px); animation: pop .5s ease forwards; }
+  .part .wp { font-family: var(--mono); font-weight: 700; font-size: 20px; }
+  .part .mean { font-size: 14px; color: var(--ink-2); margin-top: 2px; }
+  .part .kind { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; opacity: .75; margin-bottom: 4px; }
+  .plus { align-self: center; color: var(--muted); font-weight: 700; font-size: 20px; opacity: 0; animation: pop .5s ease forwards; }
+  .k-prefix { background: var(--violet-50); color: var(--violet); }
+  .k-root { background: var(--teal-50); color: var(--teal-700); }
+  .k-suffix { background: var(--orange-50); color: var(--orange); }
+  .c-prefix { color: var(--violet); } .c-root { color: var(--teal-700); } .c-suffix { color: var(--orange); }
+  .dec-def { margin: 26px auto 0; font-size: 18px; color: var(--ink-2); max-width: 560px; opacity: 0; animation: pop .5s ease forwards; }
+  .dec-def b { color: var(--ink); }
+  @keyframes pop { to { opacity: 1; transform: none; } }
+  .dec-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 34px; }
+  .dec-tabs button { font: 600 14px var(--font); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--ink-2); cursor: pointer; transition: all .15s ease; }
+  .dec-tabs button:hover { border-color: var(--teal-500); color: var(--teal-700); }
+  .dec-tabs button.on { background: var(--teal-700); border-color: var(--teal-700); color: #fff; }
+  .legend { display: flex; justify-content: center; gap: 18px; margin-top: 18px; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: 0; }
+
+  /* ---------- Feature rows ---------- */
+  .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .feature + .feature { margin-top: 130px; }
+  .feature.rev .f-media { order: 2; }
+  .f-media { position: relative; display: flex; justify-content: center; padding: 30px 0; }
+  .f-media::before { content: ""; position: absolute; inset: 0 6%; border-radius: 40px; background: var(--blob, var(--teal-50)); }
+  .f-media .phone { position: relative; width: 300px; box-shadow: 0 0 0 2px #2A3533 inset, 0 40px 60px -30px rgba(4,33,29,.5); }
+  .f-text ul { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 14px; }
+  .f-text li { display: flex; gap: 12px; font-size: 16.5px; color: var(--ink-2); }
+  .f-text li::before { content: ""; flex: none; width: 22px; height: 22px; margin-top: 2px; border-radius: 50%; background: var(--teal-50) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%230F7B6C' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat; }
+  .f-text li b { color: var(--ink); }
+  @media (max-width: 900px) {
+    .feature { grid-template-columns: 1fr; gap: 28px; }
+    .feature.rev .f-media { order: 0; }
+    .feature + .feature { margin-top: 90px; }
+    .f-media .phone { width: 250px; }
+  }
+
+  /* ---------- ECG monitor ---------- */
+  .ecg-sec { background: var(--teal-950); color: #fff; }
+  .ecg-sec .eyebrow { color: var(--teal-300); }
+  .ecg-sec .lead { color: rgba(255,255,255,.75); }
+  .monitor { margin-top: 44px; border-radius: 26px; background: #020F0D; border: 1px solid rgba(127,243,221,.14); box-shadow: 0 40px 80px -40px rgba(0,0,0,.8), inset 0 0 80px rgba(22,160,141,.06); overflow: hidden; }
+  .mon-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 22px; border-bottom: 1px solid rgba(127,243,221,.1); font-family: var(--mono); font-size: 13px; color: rgba(233,255,249,.7); flex-wrap: wrap; }
+  .mon-top .name { color: var(--teal-300); font-weight: 700; font-size: 15px; }
+  .mon-top .hr { color: #fff; font-size: 15px; }
+  .mon-top .hr b { color: #7FF3DD; font-size: 22px; margin-right: 4px; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #7FF3DD; margin-right: 8px; box-shadow: 0 0 10px #7FF3DD; animation: blink 1.2s ease-in-out infinite; }
+  @keyframes blink { 50% { opacity: .25; } }
+  .mon-screen { position: relative; height: 260px; background-image:
+      linear-gradient(rgba(127,243,221,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(127,243,221,.05) 1px, transparent 1px),
+      linear-gradient(rgba(127,243,221,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(127,243,221,.1) 1px, transparent 1px);
+    background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px; }
+  .mon-screen canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .mon-body { display: grid; grid-template-columns: 1fr 1.3fr; gap: 0; border-top: 1px solid rgba(127,243,221,.1); }
+  .rhythms { display: flex; flex-wrap: wrap; gap: 8px; padding: 22px; border-right: 1px solid rgba(127,243,221,.1); align-content: flex-start; }
+  .rhythms button { font: 600 13.5px var(--font); color: rgba(233,255,249,.82); background: rgba(127,243,221,.06); border: 1px solid rgba(127,243,221,.16); padding: 8px 13px; border-radius: 999px; cursor: pointer; transition: all .15s ease; }
+  .rhythms button:hover { border-color: rgba(127,243,221,.5); }
+  .rhythms button.on { background: var(--teal-300); color: var(--teal-950); border-color: var(--teal-300); }
+  .criteria { padding: 22px 26px; }
+  .criteria h4 { margin: 0 0 10px; font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: rgba(233,255,249,.55); }
+  .criteria ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+  .criteria li { display: flex; gap: 10px; color: #E9FFF9; font-size: 15.5px; }
+  .criteria li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 8px; border-radius: 2px; background: var(--orange); }
+  .tag { display: inline-block; font: 700 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; margin-left: 8px; vertical-align: 2px; }
+  .tag.urgent { background: rgba(214,69,65,.2); color: #FF8A86; }
+  .tag.ok { background: rgba(127,243,221,.14); color: var(--teal-300); }
+  .tag.watch { background: rgba(217,130,43,.2); color: #FFB870; }
+  .ecg-foot { margin-top: 18px; font-size: 13px; color: rgba(255,255,255,.5); }
+  @media (max-width: 760px) {
+    .mon-body { grid-template-columns: 1fr; }
+    .rhythms { border-right: 0; border-bottom: 1px solid rgba(127,243,221,.1); }
+    .mon-screen { height: 200px; }
+  }
+
+  /* ---------- Gallery ---------- */
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 48px; }
+  .ill { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 14px 14px 12px; transition: transform .2s ease, box-shadow .2s ease; cursor: zoom-in; }
+  .ill:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .ill img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+  .ill figcaption { font-size: 13.5px; font-weight: 600; color: var(--ink-2); margin-top: 6px; }
+  .ill figcaption small { display: block; font-weight: 500; color: var(--muted); font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+  .ill.big { grid-column: span 2; grid-row: span 2; }
+  .ill.big figcaption { font-size: 16px; }
+  @media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .gallery { gap: 12px; } .ill { padding: 10px; } }
+  .lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(4,33,29,.82); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; padding: 20px; cursor: zoom-out; }
+  .lightbox.open { display: flex; }
+  .lightbox figure { margin: 0; background: #fff; border-radius: 24px; padding: 20px; max-width: 980px; width: 100%; }
+  .lightbox img { width: 100%; max-height: 76vh; object-fit: contain; }
+  .lightbox figcaption { text-align: center; font-weight: 700; margin-top: 8px; }
+
+  /* ---------- Audience ---------- */
+  .aud { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 48px; }
+  .aud-card { border-radius: var(--radius); padding: 26px 22px; background: var(--mist); }
+  .aud-card .ico { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: #fff; box-shadow: var(--shadow); margin-bottom: 18px; }
+  .aud-card .ico svg { width: 24px; height: 24px; stroke: var(--teal-700); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .aud-card p { color: var(--ink-2); font-size: 15px; margin: 8px 0 0; }
+  @media (max-width: 960px) { .aud { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .aud { grid-template-columns: 1fr; } }
+
+  /* ---------- Pricing ---------- */
+  .pricing { background: linear-gradient(180deg, var(--mist), #fff); }
+  .plans { display: grid; grid-template-columns: 1fr 1.25fr; gap: 22px; margin-top: 48px; align-items: stretch; }
+  .plan { border-radius: 28px; padding: 34px; background: #fff; border: 1px solid var(--line); }
+  .plan.pro { background: radial-gradient(700px 400px at 90% 0%, #16A08D, #0B4F46 55%, #062F2A); color: #fff; border: 0; box-shadow: 0 40px 70px -40px rgba(4,33,29,.7); }
+  .plan h3 { font-size: 24px; }
+  .plan .sub { color: var(--muted); margin: 6px 0 0; font-size: 15px; }
+  .plan.pro .sub { color: rgba(255,255,255,.75); }
+  .plan ul { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 11px; }
+  .plan li { display: flex; gap: 10px; font-size: 15.5px; color: var(--ink-2); }
+  .plan.pro li { color: #E9FFF9; }
+  .plan li::before { content: "✓"; flex: none; font-weight: 800; color: var(--teal-700); }
+  .plan.pro li::before { color: var(--teal-300); }
+  .price-free { font-size: 46px; font-weight: 800; letter-spacing: -0.03em; margin-top: 18px; }
+  .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 24px; }
+  .tier { position: relative; border-radius: 16px; padding: 14px 16px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); }
+  .tier.best { background: #fff; color: var(--ink); border-color: #fff; }
+  .tier .t-name { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .8; }
+  .tier .t-price { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .tier .t-per { font-size: 13px; opacity: .75; }
+  .tier .badge { position: absolute; top: -10px; right: 12px; background: var(--orange); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; }
+  .fine { font-size: 13px; color: var(--muted); margin-top: 20px; }
+  .plan.pro .fine { color: rgba(255,255,255,.6); }
+  @media (max-width: 860px) { .plans { grid-template-columns: 1fr; } }
+  @media (max-width: 420px) { .plan { padding: 26px 20px; } .tier .t-price { font-size: 22px; } }
+
+  /* ---------- FAQ ---------- */
+  .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+  details { border-bottom: 1px solid var(--line); padding: 4px 0; }
+  details:first-child { border-top: 1px solid var(--line); }
+  summary { list-style: none; cursor: pointer; padding: 18px 40px 18px 0; position: relative; font-weight: 700; font-size: 17px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: ""; position: absolute; right: 6px; top: 50%; width: 12px; height: 12px; margin-top: -8px; border-right: 2.5px solid var(--teal-700); border-bottom: 2.5px solid var(--teal-700); transform: rotate(45deg); transition: transform .2s ease; }
+  details[open] summary::after { transform: rotate(-135deg); margin-top: -2px; }
+  details p { margin: 0 0 18px; color: var(--ink-2); }
+  .support-card { margin-top: 30px; border-radius: var(--radius); background: var(--teal-50); padding: 26px; }
+  .support-card a.mail { display: inline-block; margin-top: 10px; font-weight: 800; font-size: 19px; }
+  @media (max-width: 860px) { .faq-grid { grid-template-columns: 1fr; gap: 26px; } }
+
+  /* ---------- Final CTA + footer ---------- */
+  .final { position: relative; overflow: hidden; text-align: center; color: #fff; background: radial-gradient(900px 500px at 50% 0%, #16A08D, #0B4F46 50%, #04211D); }
+  .final h2 { max-width: 760px; margin: 0 auto; }
+  .final .lead { margin: 18px auto 0; color: rgba(255,255,255,.78); }
+  .final .store { margin-top: 34px; }
+  .final img.icon { width: 96px; height: 96px; border-radius: 22px; margin: 0 auto 28px; box-shadow: 0 20px 40px -14px rgba(0,0,0,.5); }
+  footer { background: var(--teal-950); color: rgba(255,255,255,.6); font-size: 14px; padding: 34px 0; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: rgba(255,255,255,.85); }
+  footer nav { position: static; display: flex; gap: 20px; flex-wrap: wrap; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal { opacity: 1; transform: none; }
+    .hero-ecg .line, .hero-ecg .glow { stroke-dashoffset: 0; }
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">+</div>
-      <h1>Aura Medical</h1>
-      <p class="tagline">Support &amp; Help Center</p>
-    </header>
 
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="card">
-      <h3>What is Aura Medical?</h3>
-      <p>Aura Medical is a visual medical terminology app for nursing, medical assistant, allied-health and medical students. It combines a complete prefix/root/suffix course, 2,400 clinical flashcards across 12 specialties, 80 original labelled illustrations and 24 animated ECG rhythms, scheduled with spaced repetition.</p>
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/icon.png" alt="">Aura Medical</a>
+    <div class="navlinks">
+      <a href="#decode">Word parts</a>
+      <a href="#ecg">ECG</a>
+      <a href="#atlas">Atlas</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#support">Support</a>
+      <a class="pill" href="https://apps.apple.com/app/id6761543231">Get the app</a>
     </div>
-
-    <div class="card">
-      <h3>Do I need an account?</h3>
-      <p>No. Aura Medical works completely offline with no sign-up required. All your study progress stays on your device.</p>
-    </div>
-
-    <div class="card">
-      <h3>Is my data private?</h3>
-      <p>Yes. Aura Medical does not collect, transmit, or share any personal data. There are no analytics, no tracking, and no cloud sync. See our <a href="privacy.html">Privacy Policy</a>.</p>
-    </div>
-
-    <div class="card">
-      <h3>How does spaced repetition work?</h3>
-      <p>After studying a card, rate how well you remembered it (Again, Hard, Good, Easy). Cards you miss come back in the same session; the rest are scheduled for the moment you're about to forget them, so daily reviews stay short.</p>
-    </div>
-
-    <div class="card">
-      <h3>Will my progress sync across devices?</h3>
-      <p>Not currently. All progress is stored locally on each device. Cloud sync may be added in a future update.</p>
-    </div>
-
-    <div class="card">
-      <h3>Is the app free?</h3>
-      <p>Aura Medical is free to download with a permanent free tier: the first units of the terminology course, the first cards of every specialty, a selection of illustrations and ECG rhythms, and a daily quiz. <strong>Aura Pro</strong> unlocks everything and is available as a weekly, monthly or yearly auto-renewing subscription, or as a one-time lifetime purchase. There are no ads.</p>
-    </div>
-
-    <div class="card">
-      <h3>How do I cancel or manage my subscription?</h3>
-      <p>Subscriptions are billed by Apple to your Apple Account and renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel anytime in <em>Settings → [your name] → Subscriptions</em> on your iPhone, or at <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
-    </div>
-
-    <div class="card">
-      <h3>I bought Pro but it's not active / I got a new phone.</h3>
-      <p>Open the app, go to <em>Settings → Restore purchases</em> while signed in with the same Apple Account you used to buy.</p>
-    </div>
-
-    <div class="card">
-      <h3>Is this medical advice?</h3>
-      <p>No. Aura Medical is an educational tool. It does not provide medical advice, diagnosis or treatment. ECG strips are simulated and illustrations are schematic.</p>
-    </div>
-
-    <div class="card">
-      <h3>I found an error in a flashcard. How do I report it?</h3>
-      <p>Please email us with the specialty, card term, and the issue. We review every report and update content regularly.</p>
-    </div>
-
-    <h2>Contact Us</h2>
-    <div class="contact">
-      <p style="margin: 0 0 12px; color: var(--muted);">Need help or have feedback?</p>
-      <a href="mailto:support@edict.com.tr">support@edict.com.tr</a>
-    </div>
-
-    <footer>
-      <a href="privacy.html">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a><br>
-      © 2026 Edict Digital Bilgi Teknolojileri A.Ş. · All rights reserved.
-    </footer>
   </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow" style="color:#7FF3DD">For nursing &amp; health students</p>
+      <h1>Medical terminology, <em>made visual.</em></h1>
+      <p class="lead">Break any term into its prefix, root and suffix. See it on a labelled anatomy drawing. Watch it on a live ECG strip. Then lock it in with spaced repetition that schedules every card for you.</p>
+      <div class="hero-cta">
+        <a class="store" href="https://apps.apple.com/app/id6761543231" aria-label="Download on the App Store">
+          <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span><small>Download on the</small><b>App Store</b></span>
+        </a>
+        <div class="hero-note"><b>Free to start.</b> No account, no ads.<br>Works fully offline.</div>
+      </div>
+      <div class="chips">
+        <span class="chip">cardi/o</span><span class="chip">-itis</span><span class="chip">hepat/o</span><span class="chip">brady-</span><span class="chip">-ectomy</span><span class="chip">nephr/o</span>
+      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone p2"><img src="assets/shots/02.jpg" alt=""></div>
+      <div class="phone p3"><img src="assets/shots/04.jpg" alt=""></div>
+      <div class="phone p1"><img src="assets/shots/01.jpg" alt=""></div>
+      <div class="float-tag t1"><span class="wp c-root">arthr/o</span>+<span class="wp c-suffix">-itis</span><span style="color:var(--muted)">= joint inflammation</span></div>
+      <div class="float-tag t2"><span class="dot" style="background:#D64541;box-shadow:0 0 10px #D64541"></span>AFib · irregularly irregular</div>
+    </div>
+  </div>
+  <div class="hero-ecg" aria-hidden="true">
+    <svg viewBox="0 0 1600 150" preserveAspectRatio="none"><path class="glow" id="heroGlow"/><path class="line" id="heroLine"/></svg>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b data-count="362">362</b><span>word parts</span></div>
+    <div class="stat"><b data-count="2400">2,400</b><span>clinical flashcards</span></div>
+    <div class="stat"><b data-count="80">80</b><span>labelled illustrations</span></div>
+    <div class="stat"><b data-count="24">24</b><span>live ECG rhythms</span></div>
+    <div class="stat"><b data-count="12">12</b><span>specialties</span></div>
+  </div>
+</div>
+
+<section class="decoder" id="decode">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">Read it backwards</p>
+    <h2>Long words stop being scary.</h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Most medical terms are built from a few hundred Greek and Latin parts. Learn the parts once and you can decode words you have never seen before. Tap a term:</p>
+    <div class="dec-card reveal">
+      <div class="dec-term" id="decTerm" aria-live="polite"></div>
+      <div class="dec-parts" id="decParts"></div>
+      <p class="dec-def" id="decDef"></p>
+      <div class="dec-tabs" id="decTabs"></div>
+      <div class="legend"><span><i style="background:var(--violet)"></i>prefix</span><span><i style="background:var(--teal-700)"></i>root / combining form</span><span><i style="background:var(--orange)"></i>suffix</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="feature reveal">
+      <div class="f-media" style="--blob:var(--orange-50)"><div class="phone"><img src="assets/shots/01.jpg" alt="Flashcard for the suffix -itis with appendicitis, arthritis and hepatitis broken into word parts" loading="lazy"></div></div>
+      <div class="f-text">
+        <p class="eyebrow">Flashcards that teach</p>
+        <h2>Every card shows how the word is built.</h2>
+        <p class="lead">Not just a term and a definition. Each card splits the word into colour-coded parts, gives real clinical examples and a pronunciation you can hear.</p>
+        <ul>
+          <li><span><b>2,400 cards</b> across cardiology, neurology, pediatrics, oncology, GI, renal and more</span></li>
+          <li><span><b>Spaced repetition</b> with Again · Hard · Good · Easy, so reviews stay short</span></li>
+          <li><span><b>Audio pronunciation</b> and phonetic spelling on every term</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature rev reveal" id="atlas">
+      <div class="f-media"><div class="phone"><img src="assets/shots/02.jpg" alt="Labelled frontal section of the heart in the Atlas" loading="lazy"></div></div>
+      <div class="f-text">
+        <p class="eyebrow">Anatomy atlas</p>
+        <h2>See it. Label it. Remember it.</h2>
+        <p class="lead">80 original scientific illustrations drawn for learning, from the heart's chambers to the nephron. Tap any structure to focus on it, then test yourself with Label it.</p>
+        <ul>
+          <li><span><b>Tap-to-focus</b> structures and pinch-to-zoom detail</span></li>
+          <li><span><b>Label it quizzes</b> turn every drawing into active recall</span></li>
+          <li><span><b>Linked to cards</b>: 83% of flashcards come with a visual</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="f-media" style="--blob:var(--violet-50)"><div class="phone"><img src="assets/shots/03.jpg" alt="Learn tab with the terminology course and specialty decks" loading="lazy"></div></div>
+      <div class="f-text">
+        <p class="eyebrow">A real course</p>
+        <h2>From <span class="c-root">cardi/o</span> to clinical charts.</h2>
+        <p class="lead">A structured terminology course of 13 units and 48 short lessons, then specialty decks that put the parts to work. Matches what nursing and medical-assistant programs teach.</p>
+        <ul>
+          <li><span><b>362 prefixes, roots and suffixes</b> in a guided order</span></li>
+          <li><span><b>Search</b> any term, word part or structure</span></li>
+          <li><span><b>Practice quizzes</b> to check yourself before an exam</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature rev reveal">
+      <div class="f-media" style="--blob:#FDECEC"><div class="phone"><img src="assets/shots/06.jpg" alt="Today screen with daily goal, streak and visual of the day" loading="lazy"></div></div>
+      <div class="f-text">
+        <p class="eyebrow">Ten minutes a day</p>
+        <h2>A daily plan that fits between shifts.</h2>
+        <p class="lead">Open the app and Today tells you exactly what to do: your due reviews, the next lesson and a visual of the day. Streaks and progress charts keep you coming back.</p>
+        <ul>
+          <li><span><b>Daily goal</b> and streak tracking</span></li>
+          <li><span><b>Progress by specialty</b> so you see weak spots</span></li>
+          <li><span><b>Private by design</b>: everything stays on your iPhone</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ecg-sec" id="ecg">
+  <div class="wrap">
+    <p class="eyebrow">ECG rhythm library</p>
+    <h2>Read rhythms the way you'll see them.</h2>
+    <p class="lead">24 rhythms rendered as live strips, each with the criteria that identify it and how urgent it is. Try a few:</p>
+    <div class="monitor reveal">
+      <div class="mon-top">
+        <span><span class="dot"></span><span class="name" id="rName">Normal sinus rhythm</span><span id="rTag"></span></span>
+        <span>Lead II · 25 mm/s</span>
+        <span class="hr"><b id="rHR">75</b>bpm</span>
+      </div>
+      <div class="mon-screen"><canvas id="ecgCanvas"></canvas></div>
+      <div class="mon-body">
+        <div class="rhythms" id="rhythms"></div>
+        <div class="criteria"><h4>How to recognise it</h4><ul id="rCrit"></ul></div>
+      </div>
+    </div>
+    <p class="ecg-foot">Strips are simulated for education. Aura Medical is a study tool, not a diagnostic device.</p>
+  </div>
+</section>
+
+<section id="illustrations">
+  <div class="wrap">
+    <p class="eyebrow">80 original illustrations</p>
+    <h2>Drawn for learning, not decoration.</h2>
+    <p class="lead">Clean, labelled, schematic drawings where every structure has a name you'll be tested on. Click any one to see it larger.</p>
+    <div class="gallery" id="gallery">
+      <figure class="ill big reveal"><img src="assets/ill/heart-frontal.svg" alt="Heart, frontal section" loading="lazy"><figcaption><small>Cardiology</small>Heart: frontal section</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/neuron.svg" alt="Neuron" loading="lazy"><figcaption><small>Neurology</small>Neuron</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/nephron.svg" alt="Nephron" loading="lazy"><figcaption><small>Renal</small>Nephron</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/eye-cross-section.svg" alt="Eye cross-section" loading="lazy"><figcaption><small>Ophthalmology</small>Eye: cross-section</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/brain-lobes.svg" alt="Brain lobes" loading="lazy"><figcaption><small>Neurology</small>Brain: lateral view</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/cardiac-conduction.svg" alt="Cardiac conduction system" loading="lazy"><figcaption><small>Cardiology</small>Conduction system</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/skin-layers.svg" alt="Layers of the skin" loading="lazy"><figcaption><small>Dermatology</small>Layers of the skin</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/respiratory-tract.svg" alt="Respiratory tract" loading="lazy"><figcaption><small>Pulmonology</small>Respiratory tract</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/knee-joint.svg" alt="Knee joint" loading="lazy"><figcaption><small>Orthopedics</small>Knee joint</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/ear-anatomy.svg" alt="Ear anatomy" loading="lazy"><figcaption><small>ENT</small>Ear: outer, middle, inner</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/synapse-neurotransmission.svg" alt="Synapse and neurotransmission" loading="lazy"><figcaption><small>Neurology</small>Synapse</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/fetal-circulation.svg" alt="Fetal circulation" loading="lazy"><figcaption><small>Pediatrics</small>Fetal circulation</figcaption></figure>
+      <figure class="ill reveal"><img src="assets/ill/blood-cells.svg" alt="Blood cells" loading="lazy"><figcaption><small>Hematology</small>Blood cells</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Who it's for</p>
+    <h2>Built for the people who chart, assess and care.</h2>
+    <div class="aud">
+      <div class="aud-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.3-9A5.2 5.2 0 0 1 12 6.6 5.2 5.2 0 0 1 21.3 12C19 16.6 12 21 12 21z"/><path d="M8 12h2l1-2 2 4 1-2h2"/></svg></div><h3>Nursing students</h3><p>Terminology, rhythms and anatomy for pre-licensure courses and NCLEX prep.</p></div>
+      <div class="aud-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><h3>Medical assistants &amp; coders</h3><p>Decode charts, orders and diagnosis names with confidence.</p></div>
+      <div class="aud-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/></svg></div><h3>Allied health</h3><p>EMT, paramedic, respiratory, radiography and pharmacy tech students.</p></div>
+      <div class="aud-card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div><h3>Pre-med &amp; anatomy</h3><p>A visual head start on the vocabulary of A&amp;P and physiology.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow">Pricing</p>
+      <h2>Start free. Go Pro when you're ready.</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">The free plan never expires. Aura Pro unlocks the full library.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Free</h3>
+        <p class="sub">A real taste of every part of the app.</p>
+        <div class="price-free">$0</div>
+        <ul>
+          <li>First two units of the terminology course</li>
+          <li>First 25 cards of every specialty deck</li>
+          <li>10 anatomy illustrations</li>
+          <li>6 ECG rhythms</li>
+          <li>One practice quiz a day</li>
+        </ul>
+      </div>
+      <div class="plan pro reveal">
+        <h3>Aura Pro</h3>
+        <p class="sub">Everything, on every device signed in to your Apple Account.</p>
+        <ul>
+          <li>All 13 units and 48 lessons</li>
+          <li>All 2,400 flashcards in 12 specialties</li>
+          <li>All 80 illustrations with Label it quizzes</li>
+          <li>All 24 ECG rhythms</li>
+          <li>Unlimited practice quizzes</li>
+        </ul>
+        <div class="tiers">
+          <div class="tier"><div class="t-name">Weekly</div><div class="t-price">$4.99</div><div class="t-per">per week</div></div>
+          <div class="tier"><div class="t-name">Monthly</div><div class="t-price">$9.99</div><div class="t-per">per month</div></div>
+          <div class="tier best"><span class="badge">Best value</span><div class="t-name">Yearly</div><div class="t-price">$39.99</div><div class="t-per">per year · about $0.77 a week</div></div>
+          <div class="tier"><div class="t-name">Lifetime</div><div class="t-price">$79.99</div><div class="t-per">pay once</div></div>
+        </div>
+        <p class="fine">US prices shown; your local price appears in the App Store. Subscriptions renew automatically until cancelled in your Apple Account settings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="support">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="eyebrow">Support</p>
+      <h2>Questions, answered.</h2>
+      <p class="lead">Can't find what you need? Write to us and a real person will reply.</p>
+      <div class="support-card">
+        <b>Contact support</b><br>
+        <span style="color:var(--ink-2);font-size:15px">Bug reports, content corrections and billing questions.</span><br>
+        <a class="mail" href="mailto:support@edict.com.tr">support@edict.com.tr</a>
+      </div>
+    </div>
+    <div>
+      <details open><summary>What is Aura Medical?</summary><p>Aura Medical is a visual medical terminology app for nursing, medical assistant, allied-health and medical students. It combines a complete prefix/root/suffix course, 2,400 clinical flashcards across 12 specialties, 80 original labelled illustrations and 24 animated ECG rhythms, scheduled with spaced repetition.</p></details>
+      <details><summary>Do I need an account?</summary><p>No. Aura Medical works completely offline with no sign-up required. All your study progress stays on your device.</p></details>
+      <details><summary>Is my data private?</summary><p>Yes. Aura Medical does not collect, transmit, or share any personal data. There are no analytics, no tracking, and no cloud sync. See our <a href="privacy.html">Privacy Policy</a>.</p></details>
+      <details><summary>How does spaced repetition work?</summary><p>After studying a card, rate how well you remembered it (Again, Hard, Good, Easy). Cards you miss come back in the same session; the rest are scheduled for the moment you're about to forget them, so daily reviews stay short.</p></details>
+      <details><summary>Will my progress sync across devices?</summary><p>Not currently. All progress is stored locally on each device. Cloud sync may be added in a future update.</p></details>
+      <details><summary>Is the app free?</summary><p>Aura Medical is free to download with a permanent free tier: the first units of the terminology course, the first cards of every specialty, a selection of illustrations and ECG rhythms, and a daily quiz. <strong>Aura Pro</strong> unlocks everything and is available as a weekly, monthly or yearly auto-renewing subscription, or as a one-time lifetime purchase. There are no ads.</p></details>
+      <details><summary>How do I cancel or manage my subscription?</summary><p>Subscriptions are billed by Apple to your Apple Account and renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel anytime in <em>Settings → [your name] → Subscriptions</em> on your iPhone, or at <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+      <details><summary>I bought Pro but it's not active, or I got a new phone.</summary><p>Open the app, go to <em>Settings → Restore purchases</em> while signed in with the same Apple Account you used to buy.</p></details>
+      <details><summary>Is this medical advice?</summary><p>No. Aura Medical is an educational tool. It does not provide medical advice, diagnosis or treatment. ECG strips are simulated and illustrations are schematic.</p></details>
+      <details><summary>I found an error in a flashcard. How do I report it?</summary><p>Please email <a href="mailto:support@edict.com.tr">support@edict.com.tr</a> with the specialty, card term, and the issue. We review every report and update content regularly.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <img class="icon" src="assets/icon.png" alt="Aura Medical app icon">
+    <h2>Your next exam has a lot of long words in it.</h2>
+    <p class="lead">Start decoding them tonight. Free to download, no account needed.</p>
+    <a class="store" href="https://apps.apple.com/app/id6761543231" aria-label="Download on the App Store">
+      <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+      <span><small>Download on the</small><b>App Store</b></span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Edict Digital Bilgi Teknolojileri A.Ş.</span>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
+      <a href="mailto:support@edict.com.tr">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true"><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure></div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* nav background on scroll */
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* reveal on scroll */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ---------- ECG model ---------- */
+  const g = (t, c, a, w) => a * Math.exp(-0.5 * ((t - c) / w) ** 2);
+  const narrow = (dt, p) => (p ? g(dt, -0.16, 0.12, 0.024) : 0) - g(dt, -0.03, 0.1, 0.008) + g(dt, 0, 1, 0.011) - g(dt, 0.03, 0.25, 0.01) + g(dt, 0.26, 0.28, 0.05);
+  const RHYTHMS = [
+    { id: 'nsr', name: 'Normal sinus rhythm', tag: ['ok', 'Normal'], rr: () => 0.8, beat: dt => narrow(dt, true),
+      crit: ['Regular rhythm, rate 60–100 bpm', 'Upright P wave before every QRS', 'PR interval 0.12–0.20 s', 'Narrow QRS (< 0.12 s)'] },
+    { id: 'brady', name: 'Sinus bradycardia', tag: ['watch', 'Monitor'], rr: () => 1.35, beat: dt => narrow(dt, true),
+      crit: ['Regular rhythm, rate below 60 bpm', 'Normal P wave before every QRS', 'Common in athletes and during sleep', 'Treat if symptomatic: hypotension, dizziness'] },
+    { id: 'tachy', name: 'Sinus tachycardia', tag: ['watch', 'Monitor'], rr: () => 0.48, beat: dt => narrow(dt, true),
+      crit: ['Regular rhythm, rate above 100 bpm', 'P waves present, may merge with T waves', 'Look for the cause: fever, pain, hypovolemia', 'Treat the cause, not the rhythm'] },
+    { id: 'afib', name: 'Atrial fibrillation', tag: ['watch', 'Variable'], rr: () => 0.45 + Math.random() * 0.55, beat: dt => narrow(dt, false),
+      base: t => 0.045 * Math.sin(2 * Math.PI * 6.3 * t) + 0.03 * Math.sin(2 * Math.PI * 8.9 * t + 1.3) + 0.02 * Math.sin(2 * Math.PI * 11.7 * t),
+      crit: ['Irregularly irregular R–R intervals', 'No discernible P waves', 'Fibrillatory baseline', 'Stroke risk → CHA₂DS₂-VASc'] },
+    { id: 'flutter', name: 'Atrial flutter', tag: ['watch', 'Variable'], rr: () => 0.8, beat: dt => narrow(dt, false),
+      base: t => { const x = (t * 5) % 1; return 0.16 * (x < 0.75 ? -x / 0.75 : (x - 1) / 0.25 + 0) + 0.08; },
+      crit: ['Sawtooth flutter waves, ~300/min', 'Often 2:1, 3:1 or 4:1 conduction', 'Best seen in II, III and aVF', 'Narrow QRS'] },
+    { id: 'avb1', name: 'First-degree AV block', tag: ['ok', 'Benign'], rr: () => 0.92, beat: dt => g(dt, -0.32, 0.12, 0.024) + narrow(dt, false),
+      crit: ['Regular rhythm', 'PR interval longer than 0.20 s', 'Every P wave is followed by a QRS', 'Usually no treatment needed'] },
+    { id: 'vt', name: 'Ventricular tachycardia', tag: ['urgent', 'Urgent'], rr: () => 0.36, beat: dt => g(dt, 0, 1.05, 0.045) - g(dt, 0.12, 0.75, 0.055),
+      crit: ['Wide QRS (> 0.12 s), rate 150–250 bpm', 'No visible P waves', 'Check for a pulse first', 'Pulseless VT → defibrillate'] },
+    { id: 'vf', name: 'Ventricular fibrillation', tag: ['urgent', 'Urgent'], rr: () => 99, beat: () => 0,
+      base: t => (0.5 + 0.3 * Math.sin(2 * Math.PI * 0.27 * t)) * (0.55 * Math.sin(2 * Math.PI * 5.2 * t + 0.8 * Math.sin(2 * Math.PI * 0.6 * t)) + 0.25 * Math.sin(2 * Math.PI * 7.7 * t + 2)),
+      crit: ['Chaotic, irregular waveform', 'No identifiable P, QRS or T waves', 'No cardiac output: start CPR', 'Defibrillate immediately'] },
+  ];
+  const hrOf = r => r.id === 'vf' ? '---' : r.id === 'afib' ? '~95' : Math.round(60 / r.rr());
+
+  /* hero ECG path */
+  (function heroPath() {
+    const W = 1600, base = 100, amp = 80, pts = [];
+    for (let x = 0; x <= W; x += 2) {
+      const t = x / 260, rr = 0.95, k = Math.round(t / rr);
+      let v = 0; for (let j = k - 1; j <= k + 1; j++) v += narrow(t - (j * rr + 0.5), true);
+      pts.push(x + ',' + (base - v * amp).toFixed(1));
+    }
+    const d = 'M' + pts.join(' L');
+    document.getElementById('heroLine').setAttribute('d', d);
+    document.getElementById('heroGlow').setAttribute('d', d);
+  })();
+
+  /* live monitor */
+  const cv = document.getElementById('ecgCanvas'), ctx = cv.getContext('2d');
+  let cur = RHYTHMS[0], beats = [], tNow = 0, lastX = 0, lastY = null, W = 0, H = 0, dpr = 1;
+  const SPEED = 150; // px per second
+  function resize() {
+    dpr = Math.min(devicePixelRatio || 1, 2);
+    const r = cv.getBoundingClientRect(); W = r.width; H = r.height;
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H); lastX = 0; lastY = null;
+    if (reduce) drawStatic();
+  }
+  function schedule(upTo) {
+    if (!beats.length) beats.push(tNow + 0.3);
+    while (beats[beats.length - 1] < upTo + 1) beats.push(beats[beats.length - 1] + cur.rr());
+    while (beats.length > 2 && beats[1] < tNow - 1) beats.shift();
+  }
+  function value(t) {
+    let v = cur.base ? cur.base(t) : 0;
+    for (const b of beats) { const dt = t - b; if (dt > -0.6 && dt < 0.6) v += cur.beat(dt); }
+    return v;
+  }
+  const yOf = v => H * 0.6 - v * H * 0.42;
+  function drawStatic() {
+    ctx.clearRect(0, 0, W, H); beats = []; tNow = 0; schedule(W / SPEED);
+    ctx.strokeStyle = '#7FF3DD'; ctx.lineWidth = 2.2; ctx.beginPath();
+    for (let x = 0; x <= W; x += 1) { const y = yOf(value(x / SPEED)); x ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+    ctx.stroke();
+  }
+  let prevTs = null;
+  function frame(ts) {
+    if (prevTs == null) prevTs = ts;
+    const dt = Math.min((ts - prevTs) / 1000, 0.05); prevTs = ts;
+    const steps = Math.max(1, Math.round(dt * SPEED));
+    schedule(tNow + dt + 0.5);
+    ctx.lineWidth = 2.2; ctx.lineJoin = 'round'; ctx.strokeStyle = '#7FF3DD'; ctx.shadowColor = 'rgba(127,243,221,.7)'; ctx.shadowBlur = 8;
+    for (let i = 0; i < steps; i++) {
+      tNow += 1 / SPEED;
+      let x = lastX + 1;
+      if (x > W) { x = 0; lastY = null; }
+      ctx.clearRect(x, 0, 18, H);
+      const y = yOf(value(tNow));
+      if (lastY != null) { ctx.beginPath(); ctx.moveTo(lastX, lastY); ctx.lineTo(x, y); ctx.stroke(); }
+      lastX = x; lastY = y;
+    }
+    requestAnimationFrame(frame);
+  }
+  const rBox = document.getElementById('rhythms');
+  function select(r) {
+    cur = r; beats = [];
+    document.getElementById('rName').textContent = r.name;
+    document.getElementById('rTag').innerHTML = `<span class="tag ${r.tag[0]}">${r.tag[1]}</span>`;
+    document.getElementById('rHR').textContent = hrOf(r);
+    document.getElementById('rCrit').innerHTML = r.crit.map(c => `<li>${c}</li>`).join('');
+    rBox.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.id === r.id));
+    if (reduce) drawStatic();
+  }
+  RHYTHMS.forEach(r => { const b = document.createElement('button'); b.textContent = r.name; b.dataset.id = r.id; b.onclick = () => select(r); rBox.appendChild(b); });
+  addEventListener('resize', resize);
+  resize(); select(RHYTHMS[0]);
+  if (!reduce) requestAnimationFrame(frame);
+
+  /* ---------- Word-part decoder ---------- */
+  const TERMS = [
+    { parts: [['electr/o', 0, 'root', 'electricity'], ['cardi/o', 0, 'root', 'heart'], ['-gram', 0, 'suffix', 'record']], word: [['electr', 'root'], ['o', 'root'], ['cardi', 'root'], ['o', 'root'], ['gram', 'suffix']], def: 'a <b>record</b> of the <b>heart</b>\'s <b>electrical</b> activity' },
+    { word: [['gastr', 'root'], ['o', 'root'], ['enter', 'root'], ['itis', 'suffix']], parts: [['gastr/o', 0, 'root', 'stomach'], ['enter/o', 0, 'root', 'small intestine'], ['-itis', 0, 'suffix', 'inflammation']], def: '<b>inflammation</b> of the <b>stomach</b> and <b>small intestine</b>' },
+    { word: [['hepat', 'root'], ['o', 'root'], ['splen', 'root'], ['o', 'root'], ['megaly', 'suffix']], parts: [['hepat/o', 0, 'root', 'liver'], ['splen/o', 0, 'root', 'spleen'], ['-megaly', 0, 'suffix', 'enlargement']], def: '<b>enlargement</b> of the <b>liver</b> and <b>spleen</b>' },
+    { word: [['brady', 'prefix'], ['card', 'root'], ['ia', 'suffix']], parts: [['brady-', 0, 'prefix', 'slow'], ['cardi/o', 0, 'root', 'heart'], ['-ia', 0, 'suffix', 'condition']], def: 'a <b>condition</b> of a <b>slow heart</b> rate (under 60 bpm)' },
+    { word: [['peri', 'prefix'], ['cardi', 'root'], ['o', 'root'], ['centesis', 'suffix']], parts: [['peri-', 0, 'prefix', 'around'], ['cardi/o', 0, 'root', 'heart'], ['-centesis', 0, 'suffix', 'surgical puncture']], def: '<b>surgical puncture</b> of the sac <b>around</b> the <b>heart</b> to remove fluid' },
+    { word: [['nephr', 'root'], ['o', 'root'], ['lith', 'root'], ['iasis', 'suffix']], parts: [['nephr/o', 0, 'root', 'kidney'], ['lith/o', 0, 'root', 'stone'], ['-iasis', 0, 'suffix', 'abnormal condition']], def: 'an <b>abnormal condition</b> of <b>stones</b> in the <b>kidney</b>' },
+    { word: [['oste', 'root'], ['o', 'root'], ['arthr', 'root'], ['itis', 'suffix']], parts: [['oste/o', 0, 'root', 'bone'], ['arthr/o', 0, 'root', 'joint'], ['-itis', 0, 'suffix', 'inflammation']], def: '<b>inflammation</b> of the <b>joint</b> involving <b>bone</b> and cartilage' },
+    { word: [['hyper', 'prefix'], ['glyc', 'root'], ['emia', 'suffix']], parts: [['hyper-', 0, 'prefix', 'above, excessive'], ['glyc/o', 0, 'root', 'sugar, glucose'], ['-emia', 0, 'suffix', 'blood condition']], def: '<b>excessive sugar</b> in the <b>blood</b>' },
+  ];
+  const label = t => t.word.map(w => w[0]).join('');
+  const tTerm = document.getElementById('decTerm'), tParts = document.getElementById('decParts'), tDef = document.getElementById('decDef'), tTabs = document.getElementById('decTabs');
+  let di = 0, timer;
+  function show(i) {
+    di = i; const t = TERMS[i];
+    tTerm.innerHTML = t.word.map(([s, k]) => `<span class="c-${k}">${s}</span>`).join('');
+    tParts.innerHTML = t.parts.map((p, j) => (j ? `<span class="plus" style="animation-delay:${j * 0.18 - 0.09}s">+</span>` : '') +
+      `<div class="part k-${p[2]}" style="animation-delay:${j * 0.18}s"><div class="kind">${p[2]}</div><div class="wp">${p[0]}</div><div class="mean">${p[3]}</div></div>`).join('');
+    tDef.style.animation = 'none'; tDef.offsetHeight; tDef.style.animation = '';
+    tDef.style.animationDelay = (t.parts.length * 0.18 + 0.1) + 's';
+    tDef.innerHTML = `<span style="font-family:var(--mono);font-weight:700;color:var(--ink)">${label(t)}</span> = ${t.def}`;
+    tTabs.querySelectorAll('button').forEach((b, j) => b.classList.toggle('on', j === i));
+  }
+  TERMS.forEach((t, i) => { const b = document.createElement('button'); b.textContent = label(t); b.onclick = () => { clearInterval(timer); show(i); }; tTabs.appendChild(b); });
+  show(0);
+  if (!reduce) timer = setInterval(() => show((di + 1) % TERMS.length), 4200);
+
+  /* ---------- Gallery lightbox ---------- */
+  const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  document.querySelectorAll('#gallery .ill').forEach(f => f.addEventListener('click', () => {
+    const img = f.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = f.querySelector('figcaption').lastChild.textContent; lb.classList.add('open');
+  }));
+  lb.addEventListener('click', () => lb.classList.remove('open'));
+  addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+})();
+</script>
 </body>
 </html>

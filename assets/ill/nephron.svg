@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Nephron" data-specialty="nephrology" data-caption="Diuretic sites: acetazolamide PCT, loop diuretics thick ascending limb, thiazides DCT, spironolactone collecting duct"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <path d="M150 156 L300 156" fill="none" stroke="#6B7A82" stroke-width="1" stroke-dasharray="4 4"/>
+  <g id="r-peritubular-capillaries" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M116 112 C118 100 132 98 140 102 C150 106 160 98 170 100 C182 102 196 98 206 108 C214 118 210 132 204 140 C196 148 182 142 172 144 C160 146 150 140 140 142 C128 144 114 132 116 112 M140 102 C138 112 136 122 140 142 M170 100 C166 112 166 130 172 144 M116 120 C128 120 136 116 144 112 M158 134 C166 128 176 130 186 136 M188 102 C190 112 196 118 206 120 M208 146 L208 256 C208 268 214 268 214 256 L214 146 M240 18 C250 12 266 12 272 22 M270 30 C276 40 272 50 266 52 M240 46 C244 54 252 54 256 50" stroke="#B9524A" stroke-width="1.5" opacity="0.85"/>
+  </g>
+  <g id="r-collecting-duct" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M284 40 L284 290" stroke="#2F3A40" stroke-width="13.4"/>
+    <path d="M284 40 L284 290" stroke="#9DB4E0" stroke-width="11"/>
+  </g>
+  <g id="r-descending-limb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M198 146 L198 262 C198 278 222 278 222 262" stroke="#2F3A40" stroke-width="9.9"/>
+    <path d="M198 146 L198 262 C198 278 222 278 222 262" stroke="#F7E3A4" stroke-width="7.5"/>
+  </g>
+  <g id="r-ascending-limb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M222 262 L222 76 C222 54 204 44 184 44 L160 48" stroke="#2F3A40" stroke-width="9.9"/>
+    <path d="M222 262 L222 76 C222 54 204 44 184 44 L160 48" stroke="#F4D35E" stroke-width="7.5"/>
+  </g>
+  <g id="r-distal-convoluted-tubule" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M158 41 C174 30 194 24 212 28 C226 31 236 24 246 22 C260 20 266 34 256 40 C246 46 250 58 262 58 C272 58 274 48 284 48" stroke="#2F3A40" stroke-width="9.9"/>
+    <path d="M158 41 C174 30 194 24 212 28 C226 31 236 24 246 22 C260 20 266 34 256 40 C246 46 250 58 262 58 C272 58 274 48 284 48" stroke="#B5D49A" stroke-width="7.5"/>
+  </g>
+  <g id="r-proximal-convoluted-tubule" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 96 C144 108 126 104 126 118 C126 132 146 130 154 120 C162 110 178 108 180 120 C182 132 198 128 198 140 L198 148" stroke="#2F3A40" stroke-width="9.9"/>
+    <path d="M150 96 C144 108 126 104 126 118 C126 132 146 130 154 120 C162 110 178 108 180 120 C182 132 198 128 198 140 L198 148" stroke="#F2A7A0" stroke-width="7.5"/>
+  </g>
+  <g id="r-bowmans-capsule">
+    <circle cx="150" cy="74" r="23" fill="#EADFD6" stroke="#2F3A40" stroke-width="1.8"/>
+    <circle cx="150" cy="74" r="18.5" fill="#E4F2F8" stroke="#6B7A82" stroke-width="1"/>
+  </g>
+  <g id="r-glomerulus" fill="#E8837A" stroke="#B9524A" stroke-width="1.6">
+    <circle cx="157.0" cy="74.0" r="6"/><circle cx="153.5" cy="80.1" r="6"/><circle cx="146.5" cy="80.1" r="6"/><circle cx="143.0" cy="74.0" r="6"/><circle cx="146.5" cy="67.9" r="6"/><circle cx="153.5" cy="67.9" r="6"/><circle cx="150" cy="74" r="5" />
+  </g>
+  <g id="r-afferent-arteriole" fill="none" stroke-linecap="round">
+    <path d="M112 54 C122 54 132 56 140 62" stroke="#2F3A40" stroke-width="8"/>
+    <path d="M112 54 C122 54 132 56 140 62" stroke="#D64541" stroke-width="5.6"/>
+  </g>
+  <g id="r-efferent-arteriole" fill="none" stroke-linecap="round">
+    <path d="M146 58 C144 44 136 32 120 26" stroke="#2F3A40" stroke-width="6.6"/>
+    <path d="M146 58 C144 44 136 32 120 26" stroke="#B9524A" stroke-width="4.4"/>
+  </g>
+  <g id="labels">
+    <g><path class="ld" d="M0.0 18.8 L126.0 28.0"/><circle class="ad" cx="126.0" cy="28.0" r="1.6"/><path class="ld" d="M0.0 48.8 L120.0 54.0"/><circle class="ad" cx="120.0" cy="54.0" r="1.6"/><path class="ld" d="M114.0 78.8 L146.0 80.0"/><circle class="ad" cx="146.0" cy="80.0" r="1.6"/><path class="ld" d="M114.0 100.8 L131.0 88.0"/><circle class="ad" cx="131.0" cy="88.0" r="1.6"/><path class="ld" d="M0.0 146.8 L150.0 143.0"/><circle class="ad" cx="150.0" cy="143.0" r="1.6"/><path class="ld" d="M0.0 172.8 L180.0 122.0"/><circle class="ad" cx="180.0" cy="122.0" r="1.6"/><path class="ld" d="M192.0 218.8 L198.0 216.0"/><circle class="ad" cx="198.0" cy="216.0" r="1.6"/><path class="ld" d="M232.0 8.8 L226.0 30.0"/><circle class="ad" cx="226.0" cy="30.0" r="1.6"/><path class="ld" d="M294.0 192.8 L222.0 196.0"/><circle class="ad" cx="222.0" cy="196.0" r="1.6"/><path class="ld" d="M294.0 248.8 L286.0 246.0"/><circle class="ad" cx="286.0" cy="246.0" r="1.6"/></g><text x="4" y="22" data-for="efferent-arteriole" data-ax="126" data-ay="28">Efferent arteriole</text>
+    <text x="4" y="52" data-for="afferent-arteriole" data-ax="120" data-ay="54">Afferent arteriole</text>
+    <text x="110" y="82" text-anchor="end" data-for="glomerulus" data-ax="146" data-ay="80">Glomerulus</text>
+    <text x="110" y="104" text-anchor="end" data-for="bowmans-capsule" data-ax="131" data-ay="88">Bowman's capsule</text>
+    <text x="4" y="150" data-for="peritubular-capillaries" data-ax="150" data-ay="143">Peritubular capillaries</text>
+    <text x="4" y="176" data-for="proximal-convoluted-tubule" data-ax="180" data-ay="122">Proximal convoluted tubule</text>
+    <text x="188" y="222" text-anchor="end" data-for="descending-limb" data-ax="198" data-ay="216">Descending limb</text>
+    <text x="236" y="12" data-for="distal-convoluted-tubule" data-ax="226" data-ay="30">Distal convoluted tubule</text>
+    <text x="298" y="196" data-for="ascending-limb" data-ax="222" data-ay="196">Ascending limb</text>
+    <text x="298" y="252" data-for="collecting-duct" data-ax="286" data-ay="246">Collecting duct</text>
+  </g>
+</svg>

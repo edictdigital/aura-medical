@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Knee joint — anterior view" data-specialty="orthopedics" data-caption="Right knee, flexed, patella reflected. ACL/PCL: cruciate ligaments; MCL/LCL: collateral ligaments"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+<g id="r-femur">
+  <path d="M172 10 L172 40 C170 62 150 72 144 88 C138 104 140 124 156 132 C170 138 184 134 188 124 C190 112 194 104 200 104 C206 104 210 112 212 124 C216 136 232 140 248 134 C264 126 266 104 258 88 C250 72 230 62 228 40 L228 10 C214 4 200 16 186 8 C180 5 176 6 172 10 Z" fill="#F2E8D0" stroke="#2F3A40" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M146 120 C150 130 160 134 172 132 M214 128 C222 138 240 140 252 132" fill="none" stroke="#CFE3E6" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M181 20 L181 46" fill="none" stroke="#D8C79E" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-pcl">
+  <path d="M207.3 104.3 C209.5 100.5 210.4 102.4 212 103 C213.6 103.6 217.2 103.5 216.7 107.7 C216.2 111.9 211.7 120.7 209 128 C206.3 135.3 202.9 147.6 200.7 151.7 C198.5 155.8 197.6 153.1 196 152.5 C194.4 151.9 190.8 152.7 191.3 148.3 C191.8 143.9 196.3 133.3 199 126 C201.7 118.7 205.1 108.1 207.3 104.3 Z" fill="#DCD3E8" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M210 110 L196 148 M205 108 L193 142" fill="none" stroke="#A99BC2" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-fibula">
+  <path d="M131 192 C131 187.8 132.7 183.2 135 181 C137.3 178.8 142 178.2 145 179 C148 179.8 152 182.8 153 186 C154 189.2 151.8 194.7 151 198 C150.2 201.3 148.7 197.3 148 206 C147.3 214.7 147.3 235.7 147 250 C146.7 264.3 146 292 146 292 C146 292 135 292 135 292 C135 292 136 264.3 136 250 C136 235.7 135.8 215.7 135 206 C134.2 196.3 131 196.2 131 192 Z" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-tibia">
+  <path d="M140 158 C138 150 150 147 166 147 L234 147 C252 147 266 150 266 158 C266 174 252 186 238 200 C231 210 228 224 228 240 L228 292 C214 296 192 288 176 292 L176 240 C176 224 172 210 164 202 C150 188 140 174 140 158 Z" fill="#F2E8D0" stroke="#2F3A40" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M192 147 C194 140 198 139 200 147 M201 147 C203 139 207 139 209 147" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M190 196 C196 192 208 192 214 196" fill="none" stroke="#D8C79E" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M190 240 L190 286" fill="none" stroke="#D8C79E" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-lateral-meniscus">
+  <path d="M138 149.5 C138 149.5 137.5 144 139 142 C140.5 140 143.5 138.2 147 137.5 C150.5 136.8 155.2 137.3 160 138 C164.8 138.7 170.5 139.9 176 141.5 C181.5 143.1 193 147.5 193 147.5 C193 147.5 179.2 149.2 170 149.5 C160.8 149.8 138 149.5 138 149.5 Z" fill="#CFE3E6" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-medial-meniscus">
+  <path d="M264 149.5 C264 149.5 264.5 144 263 142 C261.5 140 258.5 138.2 255 137.5 C251.5 136.8 246.8 137.3 242 138 C237.2 138.7 231.5 139.9 226 141.5 C220.5 143.1 209 147.5 209 147.5 C209 147.5 222.8 149.2 232 149.5 C241.2 149.8 264 149.5 264 149.5 Z" fill="#CFE3E6" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-acl">
+  <path d="M185.9 113.9 C185.4 110.6 188.6 110.6 190 110 C191.4 109.4 192.1 107.3 194.1 110.1 C196.1 112.9 199.5 121.5 202 127 C204.5 132.5 208.6 139.7 209.1 143.1 C209.6 146.5 206.4 146.9 205 147.5 C203.6 148.1 202.9 149.8 200.9 146.9 C198.9 144 195.5 135.5 193 130 C190.5 124.5 186.4 117.2 185.9 113.9 Z" fill="#DCD3E8" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M190 114 L204 144 M194 113 L207 141" fill="none" stroke="#A99BC2" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-lcl">
+  <path d="M138.5 93.7 C137.6 98.5 137.3 110.4 136.7 119.8 C136.1 129.1 134.9 139.4 134.8 149.9 C134.7 160.5 135.3 177.1 136 183.1 C136.7 189 138.1 185.7 139.1 185.7 C140.1 185.7 141.7 188.9 142 182.9 C142.3 177 140.9 160.5 141.2 150.1 C141.4 139.6 142.6 129.5 143.3 120.2 C144 110.9 145.7 99.2 145.5 94.3 C145.3 89.4 143.4 90.9 142.2 90.9 C141.1 90.8 139.4 88.9 138.5 93.7 Z" fill="#DCD3E8" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M141 100 L138 178" fill="none" stroke="#A99BC2" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="r-mcl">
+  <path d="M249.4 83.9 C250.2 88.1 255.2 95.8 257.3 103.3 C259.3 110.7 260.9 120.8 261.7 128.5 C262.5 136.2 263.1 142.4 262.3 149.4 C261.4 156.4 259.2 163.3 256.6 170.4 C254 177.5 250.3 184.8 246.9 192 C243.4 199.3 237.4 209.4 236 214 C234.5 218.6 236.8 219 238.2 219.6 C239.5 220.3 241.2 222 244 218 C246.8 214.1 251.6 203.4 255.1 196 C258.7 188.6 262.6 181.2 265.4 173.6 C268.1 166 270.7 158.3 271.7 150.6 C272.7 142.9 272.1 135.8 271.3 127.5 C270.5 119.2 268.9 108.6 266.7 100.7 C264.6 92.8 261 84 258.6 80.1 C256.2 76.3 253.9 77.2 252.3 77.8 C250.8 78.4 248.5 79.6 249.4 83.9 Z" fill="#DCD3E8" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M258 90 C264 110 266 132 265 150 C262 170 254 190 242 212" fill="none" stroke="#A99BC2" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<path d="M190 196 C193.8 191 210.2 191 214 196 C217.8 201 216.8 221 213 226 C209.2 231 194.8 231 191 226 C187.2 221 186.2 201 190 196 Z" fill="#EADFD6" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M196 200 L196 224 M202 200 L202 224 M208 200 L208 224" fill="none" stroke="#A99BC2" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="r-patella">
+  <path d="M180 232 C183.3 227.3 194.7 224 202 224 C209.3 224 220.7 227.3 224 232 C227.3 236.7 224 245 222 252 C220 259 215.3 269.3 212 274 C208.7 278.7 205.3 280 202 280 C198.7 280 195.3 278.7 192 274 C188.7 269.3 184 259 182 252 C180 245 176.7 236.7 180 232 Z" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M186 236 C188.3 232.3 196.7 230 202 230 C207.3 230 215.7 232.3 218 236 C220.3 239.7 218.7 246.3 216 252 C213.3 257.7 206.7 270 202 270 C197.3 270 190.7 257.7 188 252 C185.3 246.3 183.7 239.7 186 236 Z" fill="#CFE3E6" stroke="#2F3A40" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M202 231 L202 269" fill="none" stroke="#9FC3C9" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="labels">
+  <g><path class="ld" d="M124.0 30.8 L180.0 34.0"/><circle class="ad" cx="180.0" cy="34.0" r="1.6"/><path class="ld" d="M124.0 100.8 L196.0 126.0"/><circle class="ad" cx="196.0" cy="126.0" r="1.6"/><path class="ld" d="M124.0 132.8 L158.0 142.0"/><circle class="ad" cx="158.0" cy="142.0" r="1.6"/><path class="ld" d="M124.0 162.8 L139.0 140.0"/><circle class="ad" cx="139.0" cy="140.0" r="1.6"/><path class="ld" d="M124.0 228.8 L141.0 236.0"/><circle class="ad" cx="141.0" cy="236.0" r="1.6"/><path class="ld" d="M280.0 92.8 L211.0 116.0"/><circle class="ad" cx="211.0" cy="116.0" r="1.6"/><path class="ld" d="M280.0 120.8 L266.0 124.0"/><circle class="ad" cx="266.0" cy="124.0" r="1.6"/><path class="ld" d="M280.0 148.8 L246.0 143.0"/><circle class="ad" cx="246.0" cy="143.0" r="1.6"/><path class="ld" d="M280.0 186.8 L228.0 176.0"/><circle class="ad" cx="228.0" cy="176.0" r="1.6"/><path class="ld" d="M280.0 248.8 L214.0 256.0"/><circle class="ad" cx="214.0" cy="256.0" r="1.6"/></g><text x="120" y="34" text-anchor="end" data-for="femur" data-ax="180" data-ay="34">Femur</text>
+  <text x="120" y="104" text-anchor="end" data-for="acl" data-ax="196" data-ay="126">ACL</text>
+  <text x="120" y="136" text-anchor="end" data-for="lateral-meniscus" data-ax="158" data-ay="142">Lateral meniscus</text>
+  <text x="120" y="166" text-anchor="end" data-for="lcl" data-ax="139" data-ay="140">LCL</text>
+  <text x="120" y="232" text-anchor="end" data-for="fibula" data-ax="141" data-ay="236">Fibula</text>
+  <text x="284" y="96" text-anchor="start" data-for="pcl" data-ax="211" data-ay="116">PCL</text>
+  <text x="284" y="124" text-anchor="start" data-for="mcl" data-ax="266" data-ay="124">MCL</text>
+  <text x="284" y="152" text-anchor="start" data-for="medial-meniscus" data-ax="246" data-ay="143">Medial meniscus</text>
+  <text x="284" y="190" text-anchor="start" data-for="tibia" data-ax="228" data-ay="176">Tibia</text>
+  <text x="284" y="252" text-anchor="start" data-for="patella" data-ax="214" data-ay="256">Patella</text>
+</g>
+</svg>

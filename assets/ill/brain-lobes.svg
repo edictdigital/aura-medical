@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Brain — lateral view" data-specialty="neurology" data-caption="Left cerebral hemisphere, lobes and key cortical areas (anterior to the left)"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <!-- brainstem and cerebellum sit behind / below the cerebrum -->
+  <g id="r-brainstem">
+    <path d="M214 168 L240 166 C242 196 238 222 234 254 L220 254 C220 234 214 222 210 214 C199 205 201 184 214 168 Z" fill="#EADFD6" stroke="#2F3A40" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M204 192 C214 196 228 196 240 192 M206 208 C216 211 228 211 239 208" fill="none" stroke="#6B7A82" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <g id="r-cerebellum">
+    <path d="M232 178 C244 164 284 160 298 170 C310 180 306 200 290 206 C272 212 246 210 236 200 C228 193 226 185 232 178 Z" fill="#B9AEB4" stroke="#2F3A40" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M240 182 C258 176 284 174 300 180 M236 191 C258 187 286 186 302 189 M242 200 C260 199 280 199 294 198" fill="none" stroke="#6B7A82" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- lobes -->
+  <g id="r-frontal-lobe">
+    <path d="M162 140 C146 142 126 138 120 122 C116 92 142 64 180 58 C194 56 205 55 214 56 C218 76 202 86 205 100 C208 114 194 120 192 134 C182 135 172 136 162 140 Z" fill="#9DB4E0" stroke="#2F3A40" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M132 84 C150 74 174 70 196 72 M126 104 C146 98 170 98 194 102" fill="none" stroke="#6B7A82" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <g id="r-parietal-lobe">
+    <path d="M214 56 C238 56 258 62 272 72 C270 92 265 110 262 124 L238 122 C224 127 208 131 192 134 C194 120 208 114 205 100 C202 86 218 76 214 56 Z" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M230 94 C242 86 254 88 262 96" fill="none" stroke="#6B7A82" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <g id="r-temporal-lobe">
+    <path d="M162 140 C172 136 182 135 192 134 C208 131 224 127 238 122 L262 124 C262 140 260 155 258 168 C236 180 196 184 170 178 C152 174 144 164 146 152 C148 144 154 140 162 140 Z" fill="#B5D396" stroke="#2F3A40" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M164 160 C190 152 222 147 254 146" fill="none" stroke="#6B7A82" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <g id="r-occipital-lobe">
+    <path d="M272 72 C288 84 298 104 294 122 C292 140 282 156 258 168 C260 155 262 140 262 124 C265 110 270 92 272 72 Z" fill="#F0A99F" stroke="#2F3A40" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M280 92 C287 104 288 122 281 140" fill="none" stroke="#6B7A82" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+
+  <!-- cortical strips either side of the central sulcus -->
+  <g id="r-primary-motor-cortex">
+    <path d="M214 56 C218 76 202 86 205 100 C208 114 194 120 192 134 L181 135 C183 120 197 114 194 100 C191 86 207 76 203 56 Z" fill="#5F84C8" stroke="#2F3A40" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+  <g id="r-somatosensory-cortex">
+    <path d="M214 56 C218 76 202 86 205 100 C208 114 194 120 192 134 L203 132 C205 120 219 114 216 100 C213 86 229 76 225 56 Z" fill="#E8C24A" stroke="#2F3A40" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+
+  <!-- language areas -->
+  <g id="r-brocas-area">
+    <ellipse cx="166" cy="126" rx="12" ry="8" fill="#7B5EA7" stroke="#2F3A40" stroke-width="1.2"/>
+  </g>
+  <g id="r-wernickes-area">
+    <ellipse cx="240" cy="134" rx="13" ry="7" fill="#7B5EA7" stroke="#2F3A40" stroke-width="1.2"/>
+  </g>
+
+  <!-- sulci -->
+  <g id="r-central-sulcus">
+    <path d="M214 56 C218 76 202 86 205 100 C208 114 194 120 192 134" fill="none" stroke="#2F3A40" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <g id="r-lateral-fissure">
+    <path d="M160 141 C172 136 182 135 192 134 C208 131 224 127 238 122 C243 119 245 114 245 108" fill="none" stroke="#2F3A40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- outer contour of the cerebrum -->
+  <path d="M120 122 C116 92 142 64 180 58 C194 56 205 55 214 56 C238 56 258 62 272 72 C288 84 298 104 294 122 C292 140 282 156 258 168 C236 180 196 184 170 178 C152 174 144 164 146 152 C148 144 154 140 162 140 C146 142 126 138 120 122 Z" fill="none" stroke="#2F3A40" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <g id="labels">
+    <g><path class="ld" d="M132.0 24.8 L206.0 72.0"/><circle class="ad" cx="206.0" cy="72.0" r="1.6"/><path class="ld" d="M114.0 68.8 L150.0 90.0"/><circle class="ad" cx="150.0" cy="90.0" r="1.6"/><path class="ld" d="M114.0 114.8 L166.0 126.0"/><circle class="ad" cx="166.0" cy="126.0" r="1.6"/><path class="ld" d="M114.0 144.8 L176.0 136.0"/><circle class="ad" cx="176.0" cy="136.0" r="1.6"/><path class="ld" d="M114.0 176.8 L192.0 166.0"/><circle class="ad" cx="192.0" cy="166.0" r="1.6"/><path class="ld" d="M114.0 234.8 L226.0 234.0"/><circle class="ad" cx="226.0" cy="234.0" r="1.6"/><path class="ld" d="M254.0 24.8 L220.0 72.0"/><circle class="ad" cx="220.0" cy="72.0" r="1.6"/><path class="ld" d="M300.0 52.8 L206.0 104.0"/><circle class="ad" cx="206.0" cy="104.0" r="1.6"/><path class="ld" d="M300.0 78.8 L244.0 78.0"/><circle class="ad" cx="244.0" cy="78.0" r="1.6"/><path class="ld" d="M300.0 108.8 L284.0 112.0"/><circle class="ad" cx="284.0" cy="112.0" r="1.6"/><path class="ld" d="M300.0 138.8 L242.0 134.0"/><circle class="ad" cx="242.0" cy="134.0" r="1.6"/><path class="ld" d="M300.0 216.8 L280.0 192.0"/><circle class="ad" cx="280.0" cy="192.0" r="1.6"/></g><text x="128" y="28" text-anchor="end" data-for="primary-motor-cortex" data-ax="206" data-ay="72">Primary motor cortex</text>
+    <text x="110" y="72" text-anchor="end" data-for="frontal-lobe" data-ax="150" data-ay="90">Frontal lobe</text>
+    <text x="110" y="118" text-anchor="end" data-for="brocas-area" data-ax="166" data-ay="126">Broca's area</text>
+    <text x="110" y="148" text-anchor="end" data-for="lateral-fissure" data-ax="176" data-ay="136">Lateral fissure</text>
+    <text x="110" y="180" text-anchor="end" data-for="temporal-lobe" data-ax="192" data-ay="166">Temporal lobe</text>
+    <text x="110" y="238" text-anchor="end" data-for="brainstem" data-ax="226" data-ay="234">Brainstem</text>
+    <text x="258" y="28" data-for="somatosensory-cortex" data-ax="220" data-ay="72">Somatosensory cortex</text>
+    <text x="304" y="56" data-for="central-sulcus" data-ax="206" data-ay="104">Central sulcus</text>
+    <text x="304" y="82" data-for="parietal-lobe" data-ax="244" data-ay="78">Parietal lobe</text>
+    <text x="304" y="112" data-for="occipital-lobe" data-ax="284" data-ay="112">Occipital lobe</text>
+    <text x="304" y="142" data-for="wernickes-area" data-ax="242" data-ay="134">Wernicke's area</text>
+    <text x="304" y="220" data-for="cerebellum" data-ax="280" data-ay="192">Cerebellum</text>
+  </g>
+</svg>

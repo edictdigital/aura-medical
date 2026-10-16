@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Heart — frontal section" data-specialty="cardiology" data-caption="Four chambers, four valves and the great vessels"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <!-- great vessels behind the heart -->
+  <g id="r-superior-vena-cava" stroke="#2F3A40" stroke-width="1.8" stroke-linejoin="round">
+    <rect x="140" y="24" width="24" height="96" rx="7" fill="#4A6FB5"/>
+  </g>
+  <g id="r-inferior-vena-cava" stroke="#2F3A40" stroke-width="1.8">
+    <rect x="150" y="196" width="22" height="88" rx="7" fill="#4A6FB5"/>
+  </g>
+  <g id="r-aorta" stroke-linecap="round" fill="none">
+    <path d="M205 104 C200 44 258 22 276 58 L280 112" stroke="#2F3A40" stroke-width="24"/>
+    <path d="M205 104 C200 44 258 22 276 58 L280 112" stroke="#D64541" stroke-width="19.5"/>
+    <path d="M226 40 L222 22 M246 33 L246 14 M262 38 L270 21" stroke="#2F3A40" stroke-width="9"/>
+    <path d="M226 40 L222 22 M246 33 L246 14 M262 38 L270 21" stroke="#D64541" stroke-width="5.5"/>
+  </g>
+  <g id="r-pulmonary-veins" stroke-linecap="round" fill="none">
+    <path d="M296 106 L268 114 M296 136 L268 130" stroke="#2F3A40" stroke-width="12"/>
+    <path d="M296 106 L268 114 M296 136 L268 130" stroke="#D64541" stroke-width="8.5"/>
+  </g>
+
+  <!-- myocardium -->
+  <path d="M128 112 C120 78 170 70 200 90 C232 72 290 80 292 122 C296 170 280 220 252 266 C246 275 236 276 228 268 C185 232 132 175 128 112 Z"
+        fill="#D96C5F" stroke="#2F3A40" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M150 96 C165 88 186 92 196 104 M232 92 C252 86 272 94 280 108" fill="none" stroke="#F0A99F" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- chambers -->
+  <g id="r-right-atrium">
+    <ellipse cx="160" cy="128" rx="26" ry="24" fill="#4A6FB5" stroke="#2F3A40" stroke-width="1.4"/>
+    <path d="M146 116 C152 110 162 108 170 112" fill="none" stroke="#9DB4E0" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g id="r-right-ventricle">
+    <path d="M148 166 C160 160 196 160 206 168 C208 195 210 220 212 236 C192 228 162 200 148 166 Z" fill="#4A6FB5" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M162 174 C174 170 190 170 198 176" fill="none" stroke="#9DB4E0" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g id="r-left-atrium">
+    <ellipse cx="250" cy="122" rx="26" ry="20" fill="#D64541" stroke="#2F3A40" stroke-width="1.4"/>
+  </g>
+  <g id="r-left-ventricle">
+    <path d="M224 168 C236 160 266 160 274 172 C276 205 262 238 246 252 C236 240 228 205 224 168 Z" fill="#D64541" stroke="#2F3A40" stroke-width="1.4" stroke-linejoin="round"/>
+  </g>
+  <g id="r-ventricular-septum">
+    <path d="M206 168 L224 168 C228 205 236 240 246 252 C236 252 220 246 212 236 C210 220 208 195 206 168 Z" fill="#B9524A" stroke="#2F3A40" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+
+  <!-- valves -->
+  <g id="r-tricuspid-valve" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M144 154 Q151 170 158 156 Z"/>
+    <path d="M161 156 Q168 172 176 154 Z"/>
+  </g>
+  <g id="r-mitral-valve" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M235 148 Q241 165 249 151 Z"/>
+    <path d="M252 151 Q259 165 266 148 Z"/>
+  </g>
+
+  <!-- pulmonary trunk sits in front of the heart -->
+  <g id="r-pulmonary-trunk" stroke-linecap="round" fill="none">
+    <path d="M186 112 C180 72 214 60 238 70 M213 66 C200 52 186 50 176 54" stroke="#2F3A40" stroke-width="20"/>
+    <path d="M186 112 C180 72 214 60 238 70 M213 66 C200 52 186 50 176 54" stroke="#4A6FB5" stroke-width="15.5"/>
+  </g>
+  <g id="r-pulmonary-valve" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.1" stroke-linejoin="round">
+    <path d="M178 104 Q182 112 186 104 Q190 112 194 104 Z"/>
+  </g>
+  <g id="r-aortic-valve" fill="#F2E8D0" stroke="#2F3A40" stroke-width="1.1" stroke-linejoin="round">
+    <path d="M200 106 Q205 114 210 106 Q215 114 220 106 Z"/>
+  </g>
+
+  <!-- flow arrows -->
+  <path d="M152 46 L152 76 M147 70 L152 77 L157 70" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <path d="M260 186 L258 214 M253 208 L258 215 L263 208" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+
+  <g id="labels">
+    <g><path class="ld" d="M118.0 28.8 L152.0 40.0"/><circle class="ad" cx="152.0" cy="40.0" r="1.6"/><path class="ld" d="M118.0 58.8 L183.0 84.0"/><circle class="ad" cx="183.0" cy="84.0" r="1.6"/><path class="ld" d="M118.0 90.8 L186.0 106.0"/><circle class="ad" cx="186.0" cy="106.0" r="1.6"/><path class="ld" d="M118.0 122.8 L160.0 132.0"/><circle class="ad" cx="160.0" cy="132.0" r="1.6"/><path class="ld" d="M118.0 154.8 L160.0 158.0"/><circle class="ad" cx="160.0" cy="158.0" r="1.6"/><path class="ld" d="M118.0 186.8 L182.0 196.0"/><circle class="ad" cx="182.0" cy="196.0" r="1.6"/><path class="ld" d="M118.0 218.8 L218.0 214.0"/><circle class="ad" cx="218.0" cy="214.0" r="1.6"/><path class="ld" d="M118.0 258.8 L161.0 272.0"/><circle class="ad" cx="161.0" cy="272.0" r="1.6"/><path class="ld" d="M298.0 26.8 L262.0 36.0"/><circle class="ad" cx="262.0" cy="36.0" r="1.6"/><path class="ld" d="M298.0 64.8 L215.0 108.0"/><circle class="ad" cx="215.0" cy="108.0" r="1.6"/><path class="ld" d="M298.0 96.8 L290.0 108.0"/><circle class="ad" cx="290.0" cy="108.0" r="1.6"/><path class="ld" d="M298.0 130.8 L254.0 124.0"/><circle class="ad" cx="254.0" cy="124.0" r="1.6"/><path class="ld" d="M298.0 162.8 L258.0 154.0"/><circle class="ad" cx="258.0" cy="154.0" r="1.6"/><path class="ld" d="M298.0 198.8 L252.0 200.0"/><circle class="ad" cx="252.0" cy="200.0" r="1.6"/></g><text x="114" y="32" text-anchor="end" data-for="superior-vena-cava" data-ax="152" data-ay="40">Superior vena cava</text>
+    <text x="114" y="62" text-anchor="end" data-for="pulmonary-trunk" data-ax="183" data-ay="84">Pulmonary trunk</text>
+    <text x="114" y="94" text-anchor="end" data-for="pulmonary-valve" data-ax="186" data-ay="106">Pulmonary valve</text>
+    <text x="114" y="126" text-anchor="end" data-for="right-atrium" data-ax="160" data-ay="132">Right atrium</text>
+    <text x="114" y="158" text-anchor="end" data-for="tricuspid-valve" data-ax="160" data-ay="158">Tricuspid valve</text>
+    <text x="114" y="190" text-anchor="end" data-for="right-ventricle" data-ax="182" data-ay="196">Right ventricle</text>
+    <text x="114" y="222" text-anchor="end" data-for="ventricular-septum" data-ax="218" data-ay="214">Ventricular septum</text>
+    <text x="114" y="262" text-anchor="end" data-for="inferior-vena-cava" data-ax="161" data-ay="272">Inferior vena cava</text>
+    <text x="302" y="30" data-for="aorta" data-ax="262" data-ay="36">Aorta</text>
+    <text x="302" y="68" data-for="aortic-valve" data-ax="215" data-ay="108">Aortic valve</text>
+    <text x="302" y="100" data-for="pulmonary-veins" data-ax="290" data-ay="108">Pulmonary veins</text>
+    <text x="302" y="134" data-for="left-atrium" data-ax="254" data-ay="124">Left atrium</text>
+    <text x="302" y="166" data-for="mitral-valve" data-ax="258" data-ay="154">Mitral valve</text>
+    <text x="302" y="202" data-for="left-ventricle" data-ax="252" data-ay="200">Left ventricle</text>
+  </g>
+</svg>

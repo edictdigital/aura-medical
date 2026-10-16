@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Blood cells" data-specialty="hematology" data-caption="Formed elements of blood as seen on a Wright-stained smear (relative sizes approximate)"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <g id="r-erythrocyte">
+    <circle cx="136" cy="44" r="15" fill="#D96C5F" stroke="#2F3A40" stroke-width="1.5"/>
+    <circle cx="136" cy="44" r="6" fill="#F0A99F"/>
+    <path d="M168 30 C176 28 178 36 175 44 C178 52 176 60 168 58 C163 57 164 50 166 44 C164 38 163 31 168 30 Z" fill="#D96C5F" stroke="#2F3A40" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <g id="r-neutrophil">
+    <circle cx="150" cy="112" r="24" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.5"/>
+    <g fill="#C9A3BE" stroke="none"><circle cx="132.7" cy="120.9" r="1.1"/> <circle cx="135.5" cy="97.0" r="1.1"/> <circle cx="143.1" cy="130.0" r="1.1"/> <circle cx="156.9" cy="126.8" r="1.1"/> <circle cx="143.6" cy="127.1" r="1.1"/> <circle cx="138.8" cy="115.4" r="1.1"/> <circle cx="130.2" cy="108.8" r="1.1"/> <circle cx="158.6" cy="124.2" r="1.1"/> <circle cx="161.1" cy="94.4" r="1.1"/> <circle cx="132.8" cy="114.8" r="1.1"/> <circle cx="166.6" cy="118.7" r="1.1"/> <circle cx="136.8" cy="123.5" r="1.1"/> <circle cx="130.8" cy="105.9" r="1.1"/> <circle cx="137.3" cy="127.6" r="1.1"/> <circle cx="133.3" cy="110.4" r="1.1"/> <circle cx="165.3" cy="100.8" r="1.1"/> <circle cx="163.5" cy="98.4" r="1.1"/> <circle cx="139.5" cy="120.5" r="1.1"/> <circle cx="163.6" cy="122.3" r="1.1"/> <circle cx="160.4" cy="119.7" r="1.1"/> <circle cx="169.8" cy="115.2" r="1.1"/> <circle cx="146.6" cy="111.1" r="1.1"/> <circle cx="159.4" cy="128.3" r="1.1"/> <circle cx="158.0" cy="92.3" r="1.1"/> <circle cx="149.0" cy="129.8" r="1.1"/> <circle cx="169.6" cy="103.8" r="1.1"/> <circle cx="140.5" cy="128.6" r="1.1"/> <circle cx="133.0" cy="124.1" r="1.1"/> <circle cx="140.7" cy="124.8" r="1.1"/> <circle cx="163.9" cy="127.0" r="1.1"/> <circle cx="135.1" cy="116.6" r="1.1"/> <circle cx="129.4" cy="114.9" r="1.1"/> <circle cx="143.7" cy="93.0" r="1.1"/> <circle cx="154.3" cy="92.2" r="1.1"/> <circle cx="154.0" cy="132.5" r="1.1"/> <circle cx="149.5" cy="109.1" r="1.1"/> <circle cx="169.5" cy="120.3" r="1.1"/> <circle cx="167.1" cy="121.9" r="1.1"/> <circle cx="141.0" cy="112.0" r="1.1"/> <circle cx="148.3" cy="132.9" r="1.1"/></g>
+    <path d="M140 104 L152 100 L162 110 L150 121" fill="none" stroke="#7B5EA7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="140" cy="104" rx="6.5" ry="5.5" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+    <ellipse cx="152" cy="100" rx="6" ry="5.5" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+    <ellipse cx="162" cy="110" rx="5.5" ry="6.5" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+    <ellipse cx="150" cy="121" rx="6.5" ry="5" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+  </g>
+  <g id="r-eosinophil">
+    <circle cx="150" cy="186" r="25" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.5"/>
+    <g fill="#E0704F" stroke="none"><circle cx="150.7" cy="207.3" r="1.8"/> <circle cx="145.3" cy="198.1" r="1.8"/> <circle cx="154.7" cy="200.7" r="1.8"/> <circle cx="161.6" cy="193.3" r="1.8"/> <circle cx="150.1" cy="168.4" r="1.8"/> <circle cx="145.7" cy="166.1" r="1.8"/> <circle cx="140.5" cy="193.9" r="1.8"/> <circle cx="169.1" cy="191.4" r="1.8"/> <circle cx="163.4" cy="175.2" r="1.8"/> <circle cx="160.1" cy="198.1" r="1.8"/> <circle cx="130.2" cy="185.5" r="1.8"/> <circle cx="156.6" cy="167.4" r="1.8"/> <circle cx="132.3" cy="175.7" r="1.8"/> <circle cx="142.6" cy="169.5" r="1.8"/> <circle cx="150.5" cy="189.8" r="1.8"/> <circle cx="165.7" cy="198.2" r="1.8"/> <circle cx="137.4" cy="173.2" r="1.8"/> <circle cx="149.1" cy="175.1" r="1.8"/> <circle cx="156.6" cy="194.7" r="1.8"/> <circle cx="144.7" cy="175.5" r="1.8"/> <circle cx="170.8" cy="183.1" r="1.8"/> <circle cx="155.3" cy="206.4" r="1.8"/> <circle cx="156.6" cy="172.0" r="1.8"/> <circle cx="142.0" cy="204.2" r="1.8"/> <circle cx="150.0" cy="197.2" r="1.8"/> <circle cx="135.2" cy="201.2" r="1.8"/> <circle cx="168.0" cy="174.0" r="1.8"/> <circle cx="133.4" cy="196.4" r="1.8"/> <circle cx="136.2" cy="192.5" r="1.8"/> <circle cx="161.6" cy="202.8" r="1.8"/> <circle cx="161.2" cy="168.5" r="1.8"/> <circle cx="149.5" cy="202.8" r="1.8"/> <circle cx="170.1" cy="178.5" r="1.8"/> <circle cx="153.3" cy="175.3" r="1.8"/> <circle cx="130.5" cy="189.8" r="1.8"/> <circle cx="145.4" cy="192.8" r="1.8"/> <circle cx="139.5" cy="199.8" r="1.8"/> <circle cx="171.1" cy="187.5" r="1.8"/> <circle cx="130.5" cy="181.0" r="1.8"/> <circle cx="150.5" cy="179.1" r="1.8"/> <circle cx="137.0" cy="168.8" r="1.8"/> <circle cx="145.3" cy="207.1" r="1.8"/> <circle cx="153.0" cy="164.8" r="1.8"/> <circle cx="164.8" cy="171.0" r="1.8"/> <circle cx="146.6" cy="171.2" r="1.8"/></g>
+    <path d="M147 184 L153 184" stroke="#7B5EA7" stroke-width="2.4" stroke-linecap="round"/>
+    <ellipse cx="141" cy="184" rx="8" ry="7" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+    <ellipse cx="159" cy="184" rx="8" ry="7" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+  </g>
+  <g id="r-basophil">
+    <circle cx="150" cy="258" r="22" fill="#E6D6EC" stroke="#2F3A40" stroke-width="1.5"/>
+    <path d="M138 262 C136 250 146 246 152 252 C158 258 166 254 162 246" fill="none" stroke="#7B5EA7" stroke-width="9" stroke-linecap="round"/>
+    <g fill="#3F2B66" stroke="none"><circle cx="144.7" cy="247.6" r="2.3"/> <circle cx="138.0" cy="250.5" r="2.3"/> <circle cx="154.1" cy="259.2" r="2.3"/> <circle cx="132.5" cy="257.2" r="2.3"/> <circle cx="149.6" cy="264.6" r="2.3"/> <circle cx="147.4" cy="273.1" r="2.3"/> <circle cx="151.5" cy="246.6" r="2.3"/> <circle cx="158.6" cy="250.6" r="2.3"/> <circle cx="158.3" cy="263.0" r="2.3"/> <circle cx="140.0" cy="265.8" r="2.3"/> <circle cx="167.3" cy="260.8" r="2.3"/> <circle cx="140.8" cy="256.2" r="2.3"/> <circle cx="164.1" cy="251.7" r="2.3"/> <circle cx="160.7" cy="244.8" r="2.3"/> <circle cx="147.8" cy="254.3" r="2.3"/> <circle cx="158.9" cy="269.4" r="2.3"/> <circle cx="155.5" cy="241.2" r="2.3"/> <circle cx="145.3" cy="267.7" r="2.3"/> <circle cx="134.7" cy="262.7" r="2.3"/> <circle cx="153.4" cy="271.9" r="2.3"/> <circle cx="140.4" cy="272.5" r="2.3"/> <circle cx="145.5" cy="259.8" r="2.3"/> <circle cx="165.4" cy="265.8" r="2.3"/> <circle cx="160.6" cy="258.1" r="2.3"/> <circle cx="138.5" cy="244.5" r="2.3"/> <circle cx="146.5" cy="241.6" r="2.3"/> <circle cx="152.5" cy="251.7" r="2.3"/> <circle cx="135.7" cy="268.9" r="2.3"/></g>
+  </g>
+  <g id="r-lymphocyte">
+    <circle cx="258" cy="56" r="17" fill="#9DB4E0" stroke="#2F3A40" stroke-width="1.5"/>
+    <circle cx="256" cy="57" r="13" fill="#7B5EA7" stroke="#5E4689" stroke-width="0.8"/>
+    <path d="M250 52 C253 50 256 51 258 53 M254 62 C257 60 260 61 262 63" fill="none" stroke="#5E4689" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <g id="r-monocyte">
+    <circle cx="258" cy="140" r="30" fill="#DCE3F0" stroke="#2F3A40" stroke-width="1.5"/>
+    <circle cx="246" cy="126" r="2.6" fill="#FFFFFF" stroke="#B5C2DA" stroke-width="0.7"/><circle cx="272" cy="160" r="2.2" fill="#FFFFFF" stroke="#B5C2DA" stroke-width="0.7"/><circle cx="240" cy="154" r="1.8" fill="#FFFFFF" stroke="#B5C2DA" stroke-width="0.7"/>
+    <path d="M246 134 C246 120 266 116 276 126 C282 134 278 148 268 150 C262 151 260 144 262 140 C264 136 258 134 254 140 C250 146 246 144 246 134 Z" fill="#8C74B8" stroke="#5E4689" stroke-width="0.9" stroke-linejoin="round"/>
+    <path d="M254 126 C258 124 264 124 268 128 M270 134 C272 138 272 142 270 144" fill="none" stroke="#6E58A0" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <g id="r-platelets">
+    <path d="M246 226 C248 220 256 220 258 225 C260 230 254 234 249 232 C246 231 245 229 246 226 Z" fill="#B9A3D6" stroke="#2F3A40" stroke-width="1.1" stroke-linejoin="round"/>
+    <circle cx="252" cy="227" r="1.1" fill="#7B5EA7"/><circle cx="254" cy="228.5" r="0.9" fill="#7B5EA7"/>
+    <path d="M262 216 C266 212 273 214 272 220 C271 225 265 226 262 222 C261 220 261 218 262 216 Z" fill="#B9A3D6" stroke="#2F3A40" stroke-width="1.1" stroke-linejoin="round"/>
+    <circle cx="267" cy="219" r="1.1" fill="#7B5EA7"/><circle cx="269" cy="220.5" r="0.9" fill="#7B5EA7"/>
+    <path d="M264 236 C268 232 276 234 276 240 C276 245 268 247 265 243 C263 241 263 238 264 236 Z" fill="#B9A3D6" stroke="#2F3A40" stroke-width="1.1" stroke-linejoin="round"/>
+    <circle cx="270" cy="240" r="1.1" fill="#7B5EA7"/><circle cx="272" cy="241.5" r="0.9" fill="#7B5EA7"/>
+    <path d="M240 242 C242 239 247 239 248 243 C249 247 244 249 241 247 C240 246 239 244 240 242 Z" fill="#B9A3D6" stroke="#2F3A40" stroke-width="1.1" stroke-linejoin="round"/>
+    <circle cx="244" cy="244" r="1.1" fill="#7B5EA7"/><circle cx="246" cy="245.5" r="0.9" fill="#7B5EA7"/>
+  </g>
+  <g id="labels">
+    <g><path class="ld" d="M108.0 44.8 L130.0 48.0"/><circle class="ad" cx="130.0" cy="48.0" r="1.6"/><path class="ld" d="M108.0 112.8 L132.0 118.0"/><circle class="ad" cx="132.0" cy="118.0" r="1.6"/><path class="ld" d="M108.0 186.8 L132.0 196.0"/><circle class="ad" cx="132.0" cy="196.0" r="1.6"/><path class="ld" d="M108.0 258.8 L136.0 266.0"/><circle class="ad" cx="136.0" cy="266.0" r="1.6"/><path class="ld" d="M300.0 56.8 L268.0 58.0"/><circle class="ad" cx="268.0" cy="58.0" r="1.6"/><path class="ld" d="M300.0 140.8 L274.0 134.0"/><circle class="ad" cx="274.0" cy="134.0" r="1.6"/><path class="ld" d="M300.0 230.8 L274.0 238.0"/><circle class="ad" cx="274.0" cy="238.0" r="1.6"/></g><text x="104" y="48" text-anchor="end" data-for="erythrocyte" data-ax="130" data-ay="48">Erythrocyte</text>
+    <text x="104" y="116" text-anchor="end" data-for="neutrophil" data-ax="132" data-ay="118">Neutrophil</text>
+    <text x="104" y="190" text-anchor="end" data-for="eosinophil" data-ax="132" data-ay="196">Eosinophil</text>
+    <text x="104" y="262" text-anchor="end" data-for="basophil" data-ax="136" data-ay="266">Basophil</text>
+    <text x="304" y="60" data-for="lymphocyte" data-ax="268" data-ay="58">Lymphocyte</text>
+    <text x="304" y="144" data-for="monocyte" data-ax="274" data-ay="134">Monocyte</text>
+    <text x="304" y="234" data-for="platelets" data-ax="274" data-ay="238">Platelets</text>
+  </g>
+</svg>

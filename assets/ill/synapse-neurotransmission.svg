@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" data-title="Chemical synapse" data-specialty="psychiatry" data-caption="Neurotransmitter release, receptor binding, reuptake (blocked by SSRIs) and breakdown by MAO"><style>text{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;font-size:9.5px;font-weight:500;fill:#2F3A40}.ld{stroke:#55636A;stroke-width:.8;fill:none}.ad{fill:#2F3A40}</style>
+  <g id="r-postsynaptic-neuron">
+    <path d="M124 186 L276 186 C282 200 266 226 226 232 C214 236 212 244 212 292 L188 292 C188 244 186 236 174 232 C134 226 118 200 124 186 Z" fill="#E6DDF0" stroke="#2F3A40" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M140 189 L262 189" fill="none" stroke="#9C8FB5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="r-synaptic-cleft">
+    <path d="M132 168 L268 168 L268 186 L132 186 Z" fill="#E4F2F7"/>
+  </g>
+  <g id="r-presynaptic-terminal">
+    <path d="M192 2 L208 2 L208 52 L192 52 Z" fill="#F6D7E3" stroke="#2F3A40" stroke-width="1.4"/>
+    <path d="M192 50 C192 66 128 70 122 106 C118 134 128 168 152 168 L248 168 C272 168 282 134 278 106 C272 70 208 66 208 50 Z" fill="#F6D7E3" stroke="#2F3A40" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+  <!-- mitochondrion (context) -->
+  <ellipse cx="240" cy="112" rx="20" ry="10" fill="#F0A99F" stroke="#2F3A40" stroke-width="1.1"/>
+  <path d="M226 112 L231 108 L236 116 L241 108 L246 116 L251 108 L255 112" fill="none" stroke="#B9524A" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+  <g id="r-mao-enzyme">
+    <path d="M218.8 104 C218.8 100.2 225.2 100.2 225.2 104 C225.2 106 223 106.6 222 105 C221 106.6 218.8 106 218.8 104 Z M242.8 99 C242.8 95.2 249.2 95.2 249.2 99 C249.2 101 247 101.6 246 100 C245 101.6 242.8 101 242.8 99 Z M254.8 112 C254.8 108.2 261.2 108.2 261.2 112 C261.2 114 259 114.6 258 113 C257 114.6 254.8 114 254.8 112 Z M228.8 124 C228.8 120.2 235.2 120.2 235.2 124 C235.2 126 233 126.6 232 125 C231 126.6 228.8 126 228.8 124 Z" fill="#8DB86B" stroke="#2F3A40" stroke-width="0.8" stroke-linejoin="round"/>
+  </g>
+  <g id="r-synaptic-vesicle">
+    <circle cx="150" cy="124" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="166" cy="138" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="182" cy="126" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="170" cy="152" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="188" cy="150" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="204" cy="138" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="156" cy="108" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="198" cy="114" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <circle cx="214" cy="154" r="6" fill="#F7E3A4" stroke="#2F3A40" stroke-width="1.1"/>
+    <path d="M148 123 L148 123 M151.8 122.4 L151.8 122.4 M150 126.2 L150 126.2 M164 137 L164 137 M167.8 136.4 L167.8 136.4 M166 140.2 L166 140.2 M180 125 L180 125 M183.8 124.4 L183.8 124.4 M182 128.2 L182 128.2 M168 151 L168 151 M171.8 150.4 L171.8 150.4 M170 154.2 L170 154.2 M186 149 L186 149 M189.8 148.4 L189.8 148.4 M188 152.2 L188 152.2 M202 137 L202 137 M205.8 136.4 L205.8 136.4 M204 140.2 L204 140.2 M154 107 L154 107 M157.8 106.4 L157.8 106.4 M156 110.2 L156 110.2 M196 113 L196 113 M199.8 112.4 L199.8 112.4 M198 116.2 L198 116.2 M212 153 L212 153 M215.8 152.4 L215.8 152.4 M214 156.2 L214 156.2" fill="none" stroke="#7B5EA7" stroke-width="2" stroke-linecap="round"/>
+    <path d="M178.5 168 C177.5 158 190.5 158 189.5 168 M194.5 168 C193.5 158 206.5 158 205.5 168" fill="#E4F2F7" stroke="#2F3A40" stroke-width="1.1"/>
+  </g>
+  <g id="r-neurotransmitter">
+    <path d="M182 173 L182 173 M187 177 L187 177 M200 174 L200 174 M205 179 L205 179 M196 181 L196 181 M214 176 L214 176 M160 176 L160 176 M226 178 L226 178 M254 176 L254 176 M258 181 L258 181 M178 182 L178 182 M244 182 L244 182" fill="none" stroke="#7B5EA7" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+  <g id="r-postsynaptic-receptor">
+    <path d="M146 191 L146 180 C146 177 150.5 177 150.5 180 L150.5 191 Z M153.5 191 L153.5 180 C153.5 177 158 177 158 180 L158 191 Z M174 191 L174 180 C174 177 178.5 177 178.5 180 L178.5 191 Z M181.5 191 L181.5 180 C181.5 177 186 177 186 180 L186 191 Z M202 191 L202 180 C202 177 206.5 177 206.5 180 L206.5 191 Z M209.5 191 L209.5 180 C209.5 177 214 177 214 180 L214 191 Z M246 191 L246 180 C246 177 250.5 177 250.5 180 L250.5 191 Z M253.5 191 L253.5 180 C253.5 177 258 177 258 180 L258 191 Z" fill="#4A6FB5" stroke="#2F3A40" stroke-width="0.9" stroke-linejoin="round"/>
+  </g>
+  <g id="r-autoreceptor">
+    <path d="M154 160 L158.5 160 L158.5 172 C158.5 175 154 175 154 172 Z M161.5 160 L166 160 L166 172 C166 175 161.5 175 161.5 172 Z" fill="#5FA8A0" stroke="#2F3A40" stroke-width="0.9" stroke-linejoin="round"/>
+  </g>
+  <g id="r-reuptake-transporter">
+    <path d="M223 160 L228.5 160 L228.5 173 L223 173 Z M231.5 160 L237 160 L237 173 L231.5 173 Z" fill="#E8A33D" stroke="#2F3A40" stroke-width="0.9" stroke-linejoin="round"/>
+  </g>
+  <!-- reuptake path (context) -->
+  <path d="M230 156 C230 144 234 136 236 128 M232 132 L236 127 L240 132" fill="none" stroke="#6B7A82" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="r-ssri">
+    <path d="M230 174 L235 177.5 L235 183 L230 186.5 L225 183 L225 177.5 Z" fill="#3D3D3D" stroke="#2F3A40" stroke-width="0.8" stroke-linejoin="round"/>
+  </g>
+
+  <g id="labels">
+    <g><path class="ld" d="M180.0 20.8 L150.0 96.0"/><circle class="ad" cx="150.0" cy="96.0" r="1.6"/><path class="ld" d="M114.0 72.8 L150.0 124.0"/><circle class="ad" cx="150.0" cy="124.0" r="1.6"/><path class="ld" d="M114.0 124.8 L158.0 164.0"/><circle class="ad" cx="158.0" cy="164.0" r="1.6"/><path class="ld" d="M114.0 172.8 L140.0 177.0"/><circle class="ad" cx="140.0" cy="177.0" r="1.6"/><path class="ld" d="M174.0 244.8 L150.0 182.0"/><circle class="ad" cx="150.0" cy="182.0" r="1.6"/><path class="ld" d="M184.0 274.8 L200.0 262.0"/><circle class="ad" cx="200.0" cy="262.0" r="1.6"/><path class="ld" d="M286.0 88.8 L258.0 112.0"/><circle class="ad" cx="258.0" cy="112.0" r="1.6"/><path class="ld" d="M286.0 132.8 L256.0 177.0"/><circle class="ad" cx="256.0" cy="177.0" r="1.6"/><path class="ld" d="M274.0 176.8 L234.0 163.0"/><circle class="ad" cx="234.0" cy="163.0" r="1.6"/><path class="ld" d="M286.0 202.8 L234.0 181.0"/><circle class="ad" cx="234.0" cy="181.0" r="1.6"/></g><text x="176" y="24" text-anchor="end" data-for="presynaptic-terminal" data-ax="150" data-ay="96">Presynaptic terminal</text>
+    <text x="110" y="76" text-anchor="end" data-for="synaptic-vesicle" data-ax="150" data-ay="124">Synaptic vesicle</text>
+    <text x="110" y="128" text-anchor="end" data-for="autoreceptor" data-ax="158" data-ay="164">Autoreceptor</text>
+    <text x="110" y="176" text-anchor="end" data-for="synaptic-cleft" data-ax="140" data-ay="177">Synaptic cleft</text>
+    <text x="170" y="248" text-anchor="end" data-for="postsynaptic-receptor" data-ax="150" data-ay="182">Postsynaptic receptor</text>
+    <text x="180" y="278" text-anchor="end" data-for="postsynaptic-neuron" data-ax="200" data-ay="262">Postsynaptic neuron</text>
+    <text x="290" y="92" data-for="mao-enzyme" data-ax="258" data-ay="112">MAO enzyme</text>
+    <text x="290" y="136" data-for="neurotransmitter" data-ax="256" data-ay="177">Neurotransmitter</text>
+    <text x="278" y="180" data-for="reuptake-transporter" data-ax="234" data-ay="163">Reuptake transporter</text>
+    <text x="290" y="206" data-for="ssri" data-ax="234" data-ay="181">SSRI</text>
+  </g>
+</svg>
