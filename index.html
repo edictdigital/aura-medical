@@ -653,8 +653,7 @@
     dpr = Math.min(devicePixelRatio || 1, 2);
     const r = cv.getBoundingClientRect(); W = r.width; H = r.height;
     cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.clearRect(0, 0, W, H); lastX = 0; lastY = null;
-    if (reduce) drawStatic();
+    drawStatic();
   }
   function schedule(upTo) {
     if (!beats.length) beats.push(tNow + 0.3);
@@ -667,11 +666,15 @@
     return v;
   }
   const yOf = v => H * 0.6 - v * H * 0.42;
+  // Fill the screen with one full strip, then let the sweep overwrite it from the left.
   function drawStatic() {
+    if (!W) return;
     ctx.clearRect(0, 0, W, H); beats = []; tNow = 0; schedule(W / SPEED);
-    ctx.strokeStyle = '#7FF3DD'; ctx.lineWidth = 2.2; ctx.beginPath();
+    ctx.strokeStyle = '#7FF3DD'; ctx.lineWidth = 2.2; ctx.lineJoin = 'round'; ctx.shadowColor = 'rgba(127,243,221,.7)'; ctx.shadowBlur = 8;
+    ctx.beginPath();
     for (let x = 0; x <= W; x += 1) { const y = yOf(value(x / SPEED)); x ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
     ctx.stroke();
+    tNow = W / SPEED; lastX = 0; lastY = null;
   }
   let prevTs = null;
   function frame(ts) {
@@ -699,7 +702,7 @@
     document.getElementById('rHR').textContent = hrOf(r);
     document.getElementById('rCrit').innerHTML = r.crit.map(c => `<li>${c}</li>`).join('');
     rBox.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.id === r.id));
-    if (reduce) drawStatic();
+    drawStatic();
   }
   RHYTHMS.forEach(r => { const b = document.createElement('button'); b.textContent = r.name; b.dataset.id = r.id; b.onclick = () => select(r); rBox.appendChild(b); });
   addEventListener('resize', resize);
